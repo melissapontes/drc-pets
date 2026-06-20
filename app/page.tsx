@@ -86,7 +86,7 @@ const faqs = [
   {
     id: "faq-1",
     q: "Quanto tempo meu pet vai viver com DRC?",
-    a: ["Não é possível prever com certeza, pois a velocidade de progressão varia muito entre cada animal. O veterinário pode acompanhar a tendência da creatinina ao longo dos meses para estimar a progressão.", "Com manejo consciente pelo tutor e pelo veterinário, alguns pets com DRC vivem vários anos com qualidade de vida."],
+    a: ["Não é possível prever com certeza, pois a velocidade de progressão varia muito entre cada animal. O veterinário pode acompanhar a tendência da creatinina ao longo dos meses para estimar a progressão.", "Com manejo consciente pelo responsável e pelo veterinário, alguns pets com DRC vivem vários anos com qualidade de vida."],
   },
   {
     id: "faq-2",
@@ -127,7 +127,7 @@ export default function Home() {
           <img src="/rim.png" alt="" aria-hidden="true" className="w-12 h-12 rounded-2xl object-cover" />
         </div>
         <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
-        <p className="text-sm text-purple-100 mt-1.5 max-w-sm mx-auto">Guia educativo para tutores de cães e gatos</p>
+        <p className="text-sm text-purple-100 mt-1.5 max-w-sm mx-auto">Guia educativo para responsáveis de cães e gatos</p>
       </header>
 
       <Tabs defaultValue="rins" className="lg:flex lg:min-h-screen">
@@ -326,7 +326,7 @@ export default function Home() {
 
                   <SectionTitle>Cuidados avançados em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados avançados em casa">
-                    <TreatItem icon="💉" title="Fluidoterapia subcutânea" desc="O tutor pode ser treinado para aplicar soro (Ringer Lactato) sob a pele do pet em casa quando ele não está se hidratando o suficiente." />
+                    <TreatItem icon="💉" title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar soro (Ringer Lactato) sob a pele do pet em casa quando ele não está se hidratando o suficiente." />
                     <TreatItem icon="🍽️" title="Sonda de alimentação (gatos)" desc="Em gatos com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos em casa." />
                   </ul>
                 </div>
@@ -349,7 +349,7 @@ export default function Home() {
           <TabsContent value="faq">
             <div className="hidden lg:block bg-white border-b border-slate-100 px-8 py-6">
               <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Perguntas frequentes</span>
-              <PageTitle>Dúvidas comuns dos tutores</PageTitle>
+              <PageTitle>Dúvidas comuns dos responsáveis</PageTitle>
               <p className="text-sm text-slate-500">Respostas diretas às perguntas mais comuns sobre DRC em pets.</p>
             </div>
 

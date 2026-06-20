@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DRC em Pets — Guia para Tutores",
+  title: "DRC em Pets — Guia para Responsáveis",
   description: "Guia educativo sobre doença renal crônica em cães e gatos, baseado nas diretrizes da IRIS.",
   icons: {
     icon: "/favicon.png",
