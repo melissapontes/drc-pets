@@ -9,7 +9,7 @@ interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function Alert({ className, variant = "info", icon, title, children, ...props }: AlertProps) {
   const variants = {
-    info:    "bg-blue-50 border-l-blue-500 text-blue-900",
+    info:    "bg-purple-50 border-l-purple-500 text-purple-900",
     warning: "bg-amber-50 border-l-amber-500 text-amber-900",
     danger:  "bg-red-50 border-l-red-500 text-red-900",
     success: "bg-emerald-50 border-l-emerald-500 text-emerald-900",

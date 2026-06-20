@@ -122,12 +122,12 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden bg-gradient-to-br from-blue-600 to-cyan-600 text-white px-5 pt-8 pb-7 text-center">
-        <span className="inline-block bg-white/20 text-xs font-bold uppercase tracking-widest rounded-full px-3 py-1 mb-3">
-          Diretrizes IRIS
-        </span>
+      <header className="lg:hidden bg-gradient-to-br from-purple-700 to-violet-500 text-white px-5 pt-8 pb-7 text-center">
+        <div className="flex justify-center mb-3">
+          <img src="/rim.png" alt="" aria-hidden="true" className="w-12 h-12 rounded-2xl object-cover" />
+        </div>
         <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
-        <p className="text-sm text-blue-100 mt-1.5 max-w-sm mx-auto">Guia educativo para tutores de cães e gatos</p>
+        <p className="text-sm text-purple-100 mt-1.5 max-w-sm mx-auto">Guia educativo para tutores de cães e gatos</p>
       </header>
 
       <Tabs defaultValue="rins" className="lg:flex lg:min-h-screen">
@@ -138,12 +138,10 @@ export default function Home() {
           {/* Branding — visível apenas em desktop dentro da sidebar */}
           <div className="hidden lg:flex lg:flex-col lg:px-5 lg:py-6 lg:border-b lg:border-slate-100 lg:mb-2 lg:w-full">
             <div className="flex items-center gap-2.5 mb-1">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
-                🐾
-              </div>
+              <img src="/rim.png" alt="" aria-hidden="true" className="w-8 h-8 rounded-xl object-cover flex-shrink-0" />
               <span className="font-extrabold text-slate-800 text-sm leading-tight">DRC em Pets</span>
             </div>
-            <p className="text-xs text-slate-400 pl-10">Guia para tutores</p>
+            <p className="text-xs text-slate-400 pl-10">Guia para responsáveis</p>
           </div>
 
           {/* Nav label — desktop only */}
@@ -151,11 +149,11 @@ export default function Home() {
             Seções
           </p>
 
-          <TabsTrigger value="rins"><span aria-hidden="true">🫀</span> Os Rins</TabsTrigger>
-          <TabsTrigger value="sinais"><span aria-hidden="true">🔍</span> Sinais</TabsTrigger>
-          <TabsTrigger value="estadios"><span aria-hidden="true">📊</span> Estádios</TabsTrigger>
-          <TabsTrigger value="tratamento"><span aria-hidden="true">💊</span> Tratamento</TabsTrigger>
-          <TabsTrigger value="faq"><span aria-hidden="true">❓</span> Dúvidas</TabsTrigger>
+          <TabsTrigger value="rins"><img src="/rim.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Os Rins</TabsTrigger>
+          <TabsTrigger value="sinais"><img src="/sinais.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Sinais</TabsTrigger>
+          <TabsTrigger value="estadios"><img src="/estadios.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Estádios</TabsTrigger>
+          <TabsTrigger value="tratamento"><img src="/tratamentro.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Tratamento</TabsTrigger>
+          <TabsTrigger value="faq"><img src="/duvidas.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Dúvidas</TabsTrigger>
 
           {/* Footer da sidebar — desktop only */}
           <div className="hidden lg:flex lg:flex-col lg:mt-auto lg:px-5 lg:py-5 lg:border-t lg:border-slate-100 lg:w-full">
@@ -163,7 +161,7 @@ export default function Home() {
               Baseado nas diretrizes da{" "}
               <a href="https://www.iris-kidney.com/what-pet-owners-should-know"
                 target="_blank" rel="noopener noreferrer"
-                className="text-blue-500 font-semibold hover:underline">
+                className="text-purple-500 font-semibold hover:underline">
                 IRIS
               </a>
               .<br />Não substitui consulta veterinária.
@@ -178,7 +176,7 @@ export default function Home() {
           <TabsContent value="rins">
             {/* Desktop: header da seção */}
             <div className="hidden lg:block bg-white border-b border-slate-100 px-8 py-6">
-              <span className="text-xs font-bold text-blue-500 uppercase tracking-widest">Fundamentos</span>
+              <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">Fundamentos</span>
               <PageTitle>Os rins e como funcionam</PageTitle>
               <p className="text-sm text-slate-500">Entenda o papel dos rins antes de compreender a doença.</p>
             </div>
@@ -269,7 +267,7 @@ export default function Home() {
           {/* ───────────── ESTÁDIOS ───────────── */}
           <TabsContent value="estadios">
             <div className="hidden lg:block bg-white border-b border-slate-100 px-8 py-6">
-              <span className="text-xs font-bold text-blue-500 uppercase tracking-widest">Classificação IRIS</span>
+              <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">Classificação IRIS</span>
               <PageTitle>Estádios da doença renal crônica</PageTitle>
               <p className="text-sm text-slate-500">Quatro estádios progressivos que orientam o tratamento adequado.</p>
             </div>
@@ -387,7 +385,7 @@ export default function Home() {
           <p className="lg:hidden text-center text-xs text-slate-400 px-4 pb-6">
             Baseado nas diretrizes da{" "}
             <a href="https://www.iris-kidney.com/what-pet-owners-should-know" target="_blank" rel="noopener noreferrer"
-              className="font-semibold text-blue-500 underline-offset-2 hover:underline"
+              className="font-semibold text-purple-500 underline-offset-2 hover:underline"
               aria-label="Visitar site da IRIS Kidney (abre em nova aba)">
               IRIS
             </a>

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="22" fill="#7c3aed"/>
+  <!-- kidney shape: thick curved stroke, like the provided icon -->
+  <path
+    d="M58 12
+       C70 18, 78 32, 78 50
+       C78 68, 70 82, 58 88
+       C52 91, 46 88, 44 82
+       C50 76, 58 64, 58 50
+       C58 36, 50 24, 44 18
+       C46 12, 52 9, 58 12 Z"
+    fill="white"
+  />
+</svg>

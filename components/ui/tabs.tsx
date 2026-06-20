@@ -33,12 +33,12 @@ const TabsTrigger = React.forwardRef<
       // mobile
       "flex-shrink-0 flex items-center gap-1.5 px-4 py-3.5 text-xs font-semibold text-slate-500 border-b-2 border-transparent -mb-px transition-all whitespace-nowrap",
       "hover:text-slate-800 hover:bg-slate-50",
-      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset",
-      "data-[state=active]:text-blue-600 data-[state=active]:border-blue-600",
+      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-inset",
+      "data-[state=active]:text-purple-700 data-[state=active]:border-purple-600",
       // desktop: full-width sidebar items
       "lg:flex-shrink-0 lg:w-full lg:justify-start lg:rounded-xl lg:mx-2 lg:px-3.5 lg:py-2.5 lg:text-sm lg:border-b-0 lg:border-0 lg:-mb-0 lg:text-slate-600",
       "lg:hover:bg-white lg:hover:text-slate-900 lg:hover:shadow-sm",
-      "lg:data-[state=active]:bg-white lg:data-[state=active]:text-blue-700 lg:data-[state=active]:shadow-sm lg:data-[state=active]:border-0 lg:data-[state=active]:font-bold",
+      "lg:data-[state=active]:bg-white lg:data-[state=active]:text-purple-700 lg:data-[state=active]:shadow-sm lg:data-[state=active]:border-0 lg:data-[state=active]:font-bold",
       className
     )}
     {...props}
