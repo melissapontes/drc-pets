@@ -4,7 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "DRC em Pets — Guia para Tutores",
   description: "Guia educativo sobre doença renal crônica em cães e gatos, baseado nas diretrizes da IRIS.",
-  icons: { icon: "/rim.png" },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/rim.png",
+  },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
