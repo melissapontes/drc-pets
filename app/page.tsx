@@ -38,7 +38,7 @@ function TreatItem({ icon, title, desc }: { icon: string; title: string; desc: s
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-6 mb-3 first:mt-0">
+    <h2 className="text-base text-[#550084] uppercase tracking-widest mt-6 mb-3 first:mt-0 text-center">
       {children}
     </h2>
   );
