@@ -122,8 +122,9 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden bg-[#550084] text-white px-5 pt-8 pb-7">
-        <div className="flex items-center gap-4">
+      <header className="lg:hidden relative overflow-hidden bg-[#550084] text-white px-5 pt-8 pb-7">
+        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/rimHero.png')" }} />
+        <div className="relative z-10 flex items-center gap-4">
           <div className="w-36 h-36 flex-shrink-0">
             <img src="/rimHero.png" alt="" aria-hidden="true" className="w-full h-full object-contain" />
           </div>
