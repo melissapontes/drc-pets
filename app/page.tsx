@@ -122,10 +122,8 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden bg-[#550084] text-white flex items-center overflow-hidden" style={{ minHeight: "200px" }}>
-        <div className="w-2/5 flex-shrink-0 self-stretch overflow-hidden">
-          <img src="/bgHero.png" alt="" aria-hidden="true" className="h-full w-full object-cover object-left" />
-        </div>
+      <header className="lg:hidden text-white overflow-hidden flex items-center" style={{ backgroundImage: "url('/bgHero.png')", backgroundSize: "cover", backgroundPosition: "left center", minHeight: "200px" }}>
+        <div className="w-2/5 flex-shrink-0" />
         <div className="w-3/5 px-4 py-6">
           <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença renal crônica em cães e gatos</h1>
           <p className="text-sm text-[#e8ccff] mt-2">Guia educativo para responsáveis</p>
