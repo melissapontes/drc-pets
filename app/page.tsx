@@ -259,7 +259,7 @@ export default function Home() {
                     <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgUrina.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
                     <div className="p-5">
                       <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Urinar mais (poliúria)</h3>
-                      <p className="text-base text-slate-600 leading-relaxed text-left">Em cães: pode urinar dentro de casa. Em gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência.</p>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Cães: pode urinar dentro de casa.<br />Gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência.</p>
                     </div>
                   </Card>
                   </div>
