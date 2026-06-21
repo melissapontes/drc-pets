@@ -31,7 +31,7 @@ const TabsTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       // mobile
-      "flex-shrink-0 flex items-center gap-1.5 px-4 py-3.5 text-sm font-semibold text-slate-500 border-b-2 border-transparent -mb-px transition-all whitespace-nowrap",
+      "flex-shrink-0 flex items-center gap-1.5 px-4 py-3.5 text-base font-semibold text-slate-500 border-b-2 border-transparent -mb-px transition-all whitespace-nowrap",
       "hover:text-slate-800 hover:bg-slate-50",
       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#550084] focus-visible:ring-inset",
       "data-[state=active]:text-[#550084] data-[state=active]:border-[#550084]",
