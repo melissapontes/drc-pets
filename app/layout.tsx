@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import SplashScreen from "@/components/SplashScreen";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Ir para o conteúdo principal
         </a>
+        <SplashScreen />
         {children}
       </body>
     </html>
