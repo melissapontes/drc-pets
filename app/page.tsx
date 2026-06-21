@@ -122,10 +122,10 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden bg-gradient-to-br from-[#550084] to-[#8800cc] text-white px-5 pt-8 pb-7">
+      <header className="lg:hidden bg-gradient-to-br from-[#2d0047] to-[#550084] text-white px-5 pt-8 pb-7">
         <div className="flex items-center gap-4">
           <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-2xl">
-            <img src="/rim.png" alt="" aria-hidden="true" className="w-full h-full object-cover scale-110" />
+            <img src="/rim.png" alt="" aria-hidden="true" className="w-full h-full object-cover scale-[1.5]" />
           </div>
           <div>
             <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
