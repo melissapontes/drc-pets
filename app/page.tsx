@@ -122,12 +122,16 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden bg-gradient-to-br from-[#550084] to-[#8800cc] text-white px-5 pt-8 pb-7 text-center">
-        <div className="flex justify-center mb-3">
-          <img src="/rim.png" alt="" aria-hidden="true" className="w-12 h-12 rounded-2xl object-cover" />
+      <header className="lg:hidden bg-gradient-to-br from-[#550084] to-[#8800cc] text-white px-5 pt-8 pb-7">
+        <div className="flex items-center gap-4">
+          <div className="w-24 h-24 flex-shrink-0 overflow-hidden rounded-2xl">
+            <img src="/rim.png" alt="" aria-hidden="true" className="w-full h-full object-cover scale-110" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
+            <p className="text-sm text-[#e8ccff] mt-1.5">Guia educativo para responsáveis de cães e gatos</p>
+          </div>
         </div>
-        <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
-        <p className="text-sm text-[#e8ccff] mt-1.5 max-w-sm mx-auto">Guia educativo para responsáveis de cães e gatos</p>
       </header>
 
       <Tabs defaultValue="rins" className="lg:flex lg:min-h-screen">
@@ -138,7 +142,7 @@ export default function Home() {
           {/* Branding — visível apenas em desktop dentro da sidebar */}
           <div className="hidden lg:flex lg:flex-col lg:px-5 lg:py-6 lg:border-b lg:border-slate-100 lg:mb-2 lg:w-full">
             <div className="flex items-center gap-2.5 mb-1">
-              <img src="/rim.png" alt="" aria-hidden="true" className="w-8 h-8 rounded-xl object-cover flex-shrink-0" />
+              <img src="/favicon.png" alt="" aria-hidden="true" className="w-8 h-8 object-contain flex-shrink-0" />
               <span className="font-extrabold text-slate-800 text-sm leading-tight">DRC em Pets</span>
             </div>
             <p className="text-xs text-slate-400 pl-10">Guia para responsáveis</p>
@@ -149,7 +153,7 @@ export default function Home() {
             Seções
           </p>
 
-          <TabsTrigger value="rins"><img src="/rim.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Os Rins</TabsTrigger>
+          <TabsTrigger value="rins"><img src="/favicon.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Os Rins</TabsTrigger>
           <TabsTrigger value="sinais"><img src="/sinais.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Sinais</TabsTrigger>
           <TabsTrigger value="estadios"><img src="/estadios.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Estádios</TabsTrigger>
           <TabsTrigger value="tratamento"><img src="/tratamentro.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Tratamento</TabsTrigger>
