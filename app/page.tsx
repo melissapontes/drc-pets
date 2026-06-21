@@ -124,14 +124,9 @@ export default function Home() {
       {/* MOBILE HEADER — oculto em desktop */}
       <header className="lg:hidden relative overflow-hidden bg-[#550084] text-white px-5 pt-8 pb-7">
         <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/rimHero.png')" }} />
-        <div className="relative z-10 flex items-center gap-4">
-          <div className="w-36 h-36 flex-shrink-0">
-            <img src="/rimHero.png" alt="" aria-hidden="true" className="w-full h-full object-contain" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
-            <p className="text-sm text-[#e8ccff] mt-1.5">Guia educativo para responsáveis de cães e gatos</p>
-          </div>
+        <div className="relative z-10">
+          <h1 className="text-4xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
+          <p className="text-lg text-[#e8ccff] mt-2">Guia educativo para responsáveis de cães e gatos</p>
         </div>
       </header>
 
