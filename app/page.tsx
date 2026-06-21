@@ -125,8 +125,8 @@ export default function Home() {
       <header className="lg:hidden relative overflow-hidden bg-[#550084] text-white px-5 pt-8 pb-7">
         <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/rimHero.png')" }} />
         <div className="relative z-10">
-          <h1 className="text-4xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
-          <p className="text-lg text-[#e8ccff] mt-2">Guia educativo para responsáveis de cães e gatos</p>
+          <h1 className="text-4xl font-extrabold leading-tight tracking-tight">Doença renal crônica<br />em cães e gatos</h1>
+          <p className="text-lg text-[#e8ccff] mt-2">Guia educativo para responsáveis</p>
         </div>
       </header>
 
