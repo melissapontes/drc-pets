@@ -263,20 +263,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <Alert variant="danger" icon="🚨" title="Emergência">
+              <Alert variant="danger" title="Emergência">
                 Se o pet parar de comer, vomitar com frequência e estiver muito desidratado, procure um veterinário imediatamente.
               </Alert>
 
-              <div>
-                <SectionTitle>Exames de diagnóstico</SectionTitle>
-                {/* Desktop: grid 2x2 */}
-                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3" aria-label="Exames diagnósticos para DRC">
-                  <TreatItem icon="🧪" title="BUN e Creatinina" desc="Detectados em exames de sangue de rotina. Sobem quando os rins já perderam ~75% da função." />
-                  <TreatItem icon="🔬" title="SDMA (novo biomarcador)" desc="Detecta a doença mais cedo — com cerca de 40% de perda de função, antes dos sinais clínicos." />
-                  <TreatItem icon="🦴" title="Imagem (raio-X e ultrassom)" desc="Avaliam tamanho, formato e estrutura interna dos rins. Rins menores indicam fibrose." />
-                  <TreatItem icon="☁️" title="Fósforo no sangue" desc="Aumenta quando os rins perdem cerca de 85% da função." />
-                </ul>
-              </div>
             </div>
           </TabsContent>
 
