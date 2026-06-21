@@ -208,9 +208,15 @@ export default function Home() {
                     </div>
                   </Card>
 
-                  <Alert variant="info" icon={<img src="/vocesabia.png" alt="" className="w-6 h-6 object-contain" />} title="Você sabia?">
-                    Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.
-                  </Alert>
+                  <Card className="overflow-hidden">
+                    <div className="flex flex-col items-center pt-6 pb-5 px-5">
+                      <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
+                        <img src="/vocesabia.png" alt="Você sabia?" className="w-full h-full object-cover" />
+                      </div>
+                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-center">Você sabia?</h3>
+                      <p className="text-base text-slate-600 leading-relaxed text-center">Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.</p>
+                    </div>
+                  </Card>
                 </div>
 
                 {/* Coluna 2: Outras funções */}
