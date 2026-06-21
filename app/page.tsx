@@ -8,7 +8,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 
 function SymptomItem({
   icon, title, desc, variant = "default",
-}: { icon: string; title: string; desc: string; variant?: "early" | "late" | "default" }) {
+}: { icon: React.ReactNode; title: string; desc: string; variant?: "early" | "late" | "default" }) {
   const border =
     variant === "early" ? "border-l-amber-400" :
     variant === "late"  ? "border-l-red-400"   :
@@ -124,7 +124,7 @@ export default function Home() {
       {/* MOBILE HEADER — oculto em desktop */}
       <header className="lg:hidden bg-[#550084] text-white px-5 pt-8 pb-7">
         <div className="flex items-center gap-4">
-          <div className="w-24 h-24 flex-shrink-0">
+          <div className="w-36 h-36 flex-shrink-0">
             <img src="/rimHero.png" alt="" aria-hidden="true" className="w-full h-full object-contain" />
           </div>
           <div>
@@ -191,27 +191,37 @@ export default function Home() {
                 {/* Coluna 1: O néfron */}
                 <div className="space-y-4">
                   <SectionTitle>Como os rins funcionam?</SectionTitle>
-                  <Card>
+                  {/* Card 1: O néfron */}
+                  <Card className="relative overflow-hidden">
+                    <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('/bgNefron.png')" }} />
                     <CardHeader>
-                      <CardTitle className="text-xl font-extrabold text-[#550084]"><img src="/nefron.png" alt="" aria-hidden="true" className="w-5 h-5 rounded object-cover inline-block" /> O néfron</CardTitle>
+                      <CardTitle className="text-xl font-extrabold text-[#550084] relative z-10"><img src="/nefron.png" alt="" aria-hidden="true" className="w-5 h-5 rounded object-cover inline-block" /> O néfron</CardTitle>
                     </CardHeader>
-                    <CardContent className="space-y-3 text-base text-slate-600 leading-relaxed">
+                    <CardContent className="text-base text-slate-600 leading-relaxed relative z-10">
                       <p>Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-[#550084] font-extrabold text-lg">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
-                      <p>Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
-                      <Alert variant="info" icon={<img src="/vocesabia.png" alt="" className="w-6 h-6 object-contain" />} title="Você sabia?">
-                        Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.
-                      </Alert>
                     </CardContent>
                   </Card>
+
+                  {/* Card 2: Filtram o sangue */}
+                  <Card className="relative overflow-hidden">
+                    <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('/bgSangue.png')" }} />
+                    <CardContent className="text-base text-slate-600 leading-relaxed pt-5 relative z-10">
+                      <p>Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
+                    </CardContent>
+                  </Card>
+
+                  <Alert variant="info" icon={<img src="/vocesabia.png" alt="" className="w-6 h-6 object-contain" />} title="Você sabia?">
+                    Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.
+                  </Alert>
                 </div>
 
                 {/* Coluna 2: Outras funções */}
                 <div className="space-y-4">
                   <SectionTitle>Outras funções dos rins</SectionTitle>
                   <ul className="space-y-3" aria-label="Funções dos rins além da filtração">
-                    <SymptomItem icon="🩸" title="Produção de eritropoetina" desc="Hormônio que estimula a medula óssea a produzir glóbulos vermelhos." />
-                    <SymptomItem icon="☀️" title="Ativação da vitamina D" desc="Transforma a vitamina D da dieta na sua forma ativa final (calcitriol)." />
-                    <SymptomItem icon="⚖️" title="Regulação do equilíbrio interno" desc="Controla o volume e a composição dos fluidos corporais." />
+                    <SymptomItem icon={<img src="/gota.png" alt="" className="w-12 h-12 object-contain" />} title="Produção de eritropoetina" desc="Hormônio que estimula a medula óssea a produzir glóbulos vermelhos." />
+                    <SymptomItem icon={<img src="/comida.png" alt="" className="w-12 h-12 object-contain" />} title="Ativação da vitamina D" desc="Transforma a vitamina D da dieta na sua forma ativa final (calcitriol)." />
+                    <SymptomItem icon={<img src="/equilibrio.png" alt="" className="w-12 h-12 object-contain" />} title="Regulação do equilíbrio interno" desc="Controla o volume e a composição dos fluidos corporais." />
                   </ul>
                 </div>
               </div>
