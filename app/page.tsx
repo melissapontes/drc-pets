@@ -226,7 +226,7 @@ export default function Home() {
                   <ul className="space-y-3" aria-label="Funções dos rins além da filtração">
                     <SymptomItem icon={<img src="/gota.png" alt="" className="w-12 h-12 object-contain" />} title="Produção de eritropoetina" desc="Hormônio que estimula a medula óssea a produzir glóbulos vermelhos." />
                     <SymptomItem icon={<img src="/comida.png" alt="" className="w-12 h-12 object-contain" />} title="Ativação da vitamina D" desc="Transforma a vitamina D da dieta na sua forma ativa final (calcitriol)." />
-                    <SymptomItem icon={<img src="/equilibrio.png" alt="" className="w-12 h-12 object-contain" />} title="Regulação do equilíbrio interno" desc="Controla o volume e a composição dos fluidos corporais." />
+                    <SymptomItem icon={<img src="/focinho.png" alt="" className="w-12 h-12 object-contain" />} title="Regulação do equilíbrio interno" desc="Controla o volume e a composição dos fluidos corporais." />
                   </ul>
                 </div>
               </div>
