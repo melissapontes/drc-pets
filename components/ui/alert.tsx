@@ -17,7 +17,7 @@ export function Alert({ className, variant = "info", icon, title, children, ...p
   return (
     <div
       role="note"
-      className={cn("rounded-xl border-l-4 p-4 flex gap-3 items-start text-base", variants[variant], className)}
+      className={cn("rounded-xl p-4 flex gap-3 items-start text-base", variants[variant], className)}
       {...props}
     >
       {icon && <span className="flex-shrink-0 mt-0.5" aria-hidden="true">{icon}</span>}

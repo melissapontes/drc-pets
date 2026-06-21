@@ -239,8 +239,8 @@ export default function Home() {
             </div>
 
             <div className="px-4 pt-5 pb-14 lg:px-8 lg:py-8 space-y-6">
-              <Alert variant="warning" icon="⚠️" title="Atenção">
-                A DRC progride lentamente. Quando os primeiros sinais aparecem, os rins já perderam cerca de 2/3 da função.
+              <Alert variant="warning" icon={<img src="/atencao.png" alt="" className="w-8 h-8 object-contain" />} title="Atenção">
+                A DRC pode progredir lentamente. Quando alguns sinais aparecem, os rins podem ja ter perdido cerca de 75% da função.
               </Alert>
 
               {/* Desktop: 2 colunas de sinais */}
