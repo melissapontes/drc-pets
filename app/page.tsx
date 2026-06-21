@@ -191,7 +191,7 @@ export default function Home() {
                   {/* Card 1: O néfron */}
                   <Card className="overflow-hidden">
                     {/* Retângulo 1 — imagem: largura 100%, altura 200px */}
-                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgNefron.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgnefron.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
                     </div>
                     {/* Retângulo 2 — texto: largura 100%, altura automática */}
                     <div className="p-5">
@@ -202,7 +202,7 @@ export default function Home() {
 
                   {/* Card 2: Filtram o sangue */}
                   <Card className="overflow-hidden">
-                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgSangue.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
+                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgsangue.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
                     <div className="p-5">
                       <p className="text-base text-slate-600 leading-relaxed text-center">Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
                     </div>
