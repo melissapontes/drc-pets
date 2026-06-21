@@ -4,8 +4,8 @@
   "description": "Guia educativo sobre doença renal crônica em cães e gatos.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#7c3aed",
-  "theme_color": "#7c3aed",
+  "background_color": "#550084",
+  "theme_color": "#550084",
   "icons": [
     {
       "src": "/rim.png",

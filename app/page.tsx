@@ -17,7 +17,7 @@ function SymptomItem({
     <li className={`flex gap-3 bg-white rounded-2xl p-4 shadow-sm border-l-4 ${border}`}>
       <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">{icon}</span>
       <div>
-        <p className="font-semibold text-slate-800 text-sm leading-snug">{title}</p>
+        <p className="font-semibold text-slate-800 text-base leading-snug">{title}</p>
         <p className="text-slate-500 text-sm mt-0.5 leading-relaxed">{desc}</p>
       </div>
     </li>
@@ -29,7 +29,7 @@ function TreatItem({ icon, title, desc }: { icon: string; title: string; desc: s
     <li className="flex gap-3 bg-white rounded-2xl p-4 shadow-sm border border-slate-100 h-full">
       <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">{icon}</span>
       <div>
-        <p className="font-semibold text-slate-800 text-sm leading-snug">{title}</p>
+        <p className="font-semibold text-slate-800 text-base leading-snug">{title}</p>
         <p className="text-slate-500 text-sm mt-0.5 leading-relaxed">{desc}</p>
       </div>
     </li>
@@ -122,12 +122,12 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden bg-gradient-to-br from-purple-700 to-violet-500 text-white px-5 pt-8 pb-7 text-center">
+      <header className="lg:hidden bg-gradient-to-br from-[#550084] to-[#8800cc] text-white px-5 pt-8 pb-7 text-center">
         <div className="flex justify-center mb-3">
           <img src="/rim.png" alt="" aria-hidden="true" className="w-12 h-12 rounded-2xl object-cover" />
         </div>
         <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
-        <p className="text-sm text-purple-100 mt-1.5 max-w-sm mx-auto">Guia educativo para responsáveis de cães e gatos</p>
+        <p className="text-sm text-[#e8ccff] mt-1.5 max-w-sm mx-auto">Guia educativo para responsáveis de cães e gatos</p>
       </header>
 
       <Tabs defaultValue="rins" className="lg:flex lg:min-h-screen">
@@ -161,7 +161,7 @@ export default function Home() {
               Baseado nas diretrizes da{" "}
               <a href="https://www.iris-kidney.com/what-pet-owners-should-know"
                 target="_blank" rel="noopener noreferrer"
-                className="text-purple-500 font-semibold hover:underline">
+                className="text-[#550084] font-semibold hover:underline">
                 IRIS
               </a>
               .<br />Não substitui consulta veterinária.
@@ -176,7 +176,7 @@ export default function Home() {
           <TabsContent value="rins">
             {/* Desktop: header da seção */}
             <div className="hidden lg:block bg-white border-b border-slate-100 px-8 py-6">
-              <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">Fundamentos</span>
+              <span className="text-xs font-bold text-[#550084] uppercase tracking-widest">Fundamentos</span>
               <PageTitle>Os rins e como funcionam</PageTitle>
               <p className="text-sm text-slate-500">Entenda o papel dos rins antes de compreender a doença.</p>
             </div>
@@ -189,12 +189,12 @@ export default function Home() {
                   <SectionTitle>Como os rins funcionam?</SectionTitle>
                   <Card>
                     <CardHeader>
-                      <CardTitle><span aria-hidden="true">🔬</span> O néfron</CardTitle>
+                      <CardTitle className="text-xl font-extrabold text-[#550084]"><img src="/nefron.png" alt="" aria-hidden="true" className="w-5 h-5 rounded object-cover inline-block" /> O néfron</CardTitle>
                     </CardHeader>
-                    <CardContent className="space-y-3 text-sm text-slate-600 leading-relaxed">
-                      <p>Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-slate-800">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
-                      <p>Os rins filtram o sangue o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
-                      <Alert variant="info" icon="💡" title="Sabia?">
+                    <CardContent className="space-y-3 text-base text-slate-600 leading-relaxed">
+                      <p>Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-[#550084] font-extrabold text-lg">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
+                      <p>Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
+                      <Alert variant="info" icon={<img src="/vocesabia.png" alt="" className="w-6 h-6 object-contain" />} title="Você sabia?">
                         Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.
                       </Alert>
                     </CardContent>
@@ -267,7 +267,7 @@ export default function Home() {
           {/* ───────────── ESTÁDIOS ───────────── */}
           <TabsContent value="estadios">
             <div className="hidden lg:block bg-white border-b border-slate-100 px-8 py-6">
-              <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">Classificação IRIS</span>
+              <span className="text-xs font-bold text-[#550084] uppercase tracking-widest">Classificação IRIS</span>
               <PageTitle>Estádios da doença renal crônica</PageTitle>
               <p className="text-sm text-slate-500">Quatro estádios progressivos que orientam o tratamento adequado.</p>
             </div>
@@ -284,12 +284,12 @@ export default function Home() {
                     className={`bg-white rounded-2xl shadow-sm border-t-4 ${s.border} p-5 space-y-3`}>
                     <div className="flex items-center gap-2.5">
                       <Badge variant={s.badgeVariant}>{s.label}</Badge>
-                      <span className="font-bold text-slate-800 text-sm">{s.title}</span>
+                      <span className="font-bold text-slate-800 text-base">{s.title}</span>
                     </div>
                     <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden" aria-hidden="true">
                       <div className={`h-full ${s.color} rounded-full`} style={{ width: `${s.pct}%` }} />
                     </div>
-                    <p className="text-sm text-slate-600 leading-relaxed">{s.desc}</p>
+                    <p className="text-base text-slate-600 leading-relaxed">{s.desc}</p>
                     <div className="flex flex-wrap gap-1.5">
                       {s.chips.map((c) => (
                         <span key={c} className="bg-slate-100 text-slate-600 text-xs font-medium rounded-full px-2.5 py-0.5">{c}</span>
@@ -385,7 +385,7 @@ export default function Home() {
           <p className="lg:hidden text-center text-xs text-slate-400 px-4 pb-6">
             Baseado nas diretrizes da{" "}
             <a href="https://www.iris-kidney.com/what-pet-owners-should-know" target="_blank" rel="noopener noreferrer"
-              className="font-semibold text-purple-500 underline-offset-2 hover:underline"
+              className="font-semibold text-[#550084] underline-offset-2 hover:underline"
               aria-label="Visitar site da IRIS Kidney (abre em nova aba)">
               IRIS
             </a>
