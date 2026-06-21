@@ -31,10 +31,10 @@ const TabsTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       // mobile
-      "flex-shrink-0 flex items-center gap-1.5 px-4 py-3.5 text-lg font-semibold text-slate-500 border-b-2 border-transparent -mb-px transition-all whitespace-nowrap",
+      "flex-shrink-0 flex items-center gap-1.5 px-4 py-3 text-lg font-semibold text-slate-500 border-b-2 border-transparent -mb-px transition-all whitespace-nowrap rounded-t-lg",
       "hover:text-slate-800 hover:bg-slate-50",
       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#550084] focus-visible:ring-inset",
-      "data-[state=active]:text-[#550084] data-[state=active]:border-[#550084]",
+      "data-[state=active]:bg-[#550084] data-[state=active]:text-white data-[state=active]:border-[#550084]",
       // desktop: full-width sidebar items
       "lg:flex-shrink-0 lg:w-full lg:justify-start lg:rounded-xl lg:mx-2 lg:px-3.5 lg:py-2.5 lg:text-sm lg:border-b-0 lg:border-0 lg:-mb-0 lg:text-slate-600",
       "lg:hover:bg-white lg:hover:text-slate-900 lg:hover:shadow-sm",

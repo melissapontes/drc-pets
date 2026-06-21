@@ -195,8 +195,8 @@ export default function Home() {
                     </div>
                     {/* Retângulo 2 — texto: largura 100%, altura automática */}
                     <div className="p-5">
-                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-center">O néfron</h3>
-                      <p className="text-base text-slate-600 leading-relaxed text-center">Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-[#550084] font-extrabold text-lg">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
+                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">O néfron</h3>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-[#550084] font-extrabold text-lg">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
                     </div>
                   </Card>
 
@@ -204,15 +204,15 @@ export default function Home() {
                   <Card className="overflow-hidden">
                     <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgsangue.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
                     <div className="p-5">
-                      <p className="text-base text-slate-600 leading-relaxed text-center">Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
                     </div>
                   </Card>
 
                   <Card className="overflow-hidden">
                     <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgvocesabia.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
                     <div className="p-5">
-                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-center">Você sabia?</h3>
-                      <p className="text-base text-slate-600 leading-relaxed text-center">Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.</p>
+                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Você sabia?</h3>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.</p>
                     </div>
                   </Card>
                 </div>
