@@ -122,7 +122,7 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden bg-gradient-to-br from-[#2d0047] to-[#550084] text-white px-5 pt-8 pb-7">
+      <header className="lg:hidden bg-[#550084] text-white px-5 pt-8 pb-7">
         <div className="flex items-center gap-4">
           <div className="w-24 h-24 flex-shrink-0">
             <img src="/rim_transparente.png" alt="" aria-hidden="true" className="w-full h-full object-contain" />
@@ -142,7 +142,7 @@ export default function Home() {
           {/* Branding — visível apenas em desktop dentro da sidebar */}
           <div className="hidden lg:flex lg:flex-col lg:px-5 lg:py-6 lg:border-b lg:border-slate-100 lg:mb-2 lg:w-full">
             <div className="flex items-center gap-2.5 mb-1">
-              <img src="/favicon.png" alt="" aria-hidden="true" className="w-8 h-8 object-contain flex-shrink-0" />
+              <img src="/rim.png" alt="" aria-hidden="true" className="w-8 h-8 object-contain flex-shrink-0" />
               <span className="font-extrabold text-slate-800 text-sm leading-tight">DRC em Pets</span>
             </div>
             <p className="text-xs text-slate-400 pl-10">Guia para responsáveis</p>
@@ -153,11 +153,11 @@ export default function Home() {
             Seções
           </p>
 
-          <TabsTrigger value="rins"><img src="/favicon.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Os Rins</TabsTrigger>
-          <TabsTrigger value="sinais"><img src="/sinais.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Sinais</TabsTrigger>
-          <TabsTrigger value="estadios"><img src="/estadios.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Estádios</TabsTrigger>
-          <TabsTrigger value="tratamento"><img src="/tratamentro.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Tratamento</TabsTrigger>
-          <TabsTrigger value="faq"><img src="/duvidas.png" alt="" aria-hidden="true" className="w-4 h-4 rounded object-cover inline-block" /> Dúvidas</TabsTrigger>
+          <TabsTrigger value="rins"><img src="/rim.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Os Rins</TabsTrigger>
+          <TabsTrigger value="sinais"><img src="/sinais.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Sinais</TabsTrigger>
+          <TabsTrigger value="estadios"><img src="/estadios.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Estádios</TabsTrigger>
+          <TabsTrigger value="tratamento"><img src="/tratamentro.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Tratamento</TabsTrigger>
+          <TabsTrigger value="faq"><img src="/duvidas.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Dúvidas</TabsTrigger>
 
           {/* Footer da sidebar — desktop only */}
           <div className="hidden lg:flex lg:flex-col lg:mt-auto lg:px-5 lg:py-5 lg:border-t lg:border-slate-100 lg:w-full">
