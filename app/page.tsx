@@ -14,8 +14,8 @@ function SymptomItem({
     variant === "late"  ? "border-l-red-400"   :
                           "border-l-slate-200";
   return (
-    <li className={`flex gap-3 bg-white rounded-2xl p-4 shadow-sm border-l-4 ${border}`}>
-      <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">{icon}</span>
+    <li className={`flex gap-3 items-center bg-white rounded-2xl p-4 shadow-sm border-l-4 ${border}`}>
+      <span className="flex-shrink-0 w-16 flex items-center justify-center" aria-hidden="true">{icon}</span>
       <div>
         <p className="font-semibold text-slate-800 text-base leading-snug">{title}</p>
         <p className="text-slate-500 text-sm mt-0.5 leading-relaxed">{desc}</p>
@@ -226,7 +226,7 @@ export default function Home() {
                   <ul className="space-y-3" aria-label="Funções dos rins além da filtração">
                     <SymptomItem icon={<img src="/gota.png" alt="" className="w-12 h-12 object-contain" />} title="Produção de eritropoetina" desc="Hormônio que estimula a medula óssea a produzir glóbulos vermelhos." />
                     <SymptomItem icon={<img src="/comida.png" alt="" className="w-12 h-12 object-contain" />} title="Ativação da vitamina D" desc="Transforma a vitamina D da dieta na sua forma ativa final (calcitriol)." />
-                    <SymptomItem icon={<img src="/focinho.png" alt="" className="w-12 h-12 object-contain" />} title="Regulação do equilíbrio interno" desc="Controla o volume e a composição dos fluidos corporais." />
+                    <SymptomItem icon={<img src="/focinho.png" alt="" className="w-16 h-16 object-contain" />} title="Regulação do equilíbrio interno" desc="Controla o volume e a composição dos fluidos corporais." />
                   </ul>
                 </div>
               </div>

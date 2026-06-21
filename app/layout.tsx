@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Guia educativo sobre doença renal crônica em cães e gatos, baseado nas diretrizes da IRIS.",
   icons: {
     icon: "/favicon.png",
-    apple: "/favicon.png",
+    apple: "/rim.png",
   },
   manifest: "/manifest.json",
 };
