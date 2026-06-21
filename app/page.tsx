@@ -1,5 +1,5 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
@@ -188,14 +188,14 @@ export default function Home() {
                 <div className="space-y-4">
                   <SectionTitle>Como os rins funcionam?</SectionTitle>
                   {/* Card 1: O néfron */}
-                  <Card className="relative overflow-hidden">
-                    <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('/bgNefron.png')" }} />
-                    <CardHeader>
-                      <CardTitle className="text-xl font-extrabold text-[#550084] relative z-10"><img src="/nefron.png" alt="" aria-hidden="true" className="w-5 h-5 rounded object-cover inline-block" /> O néfron</CardTitle>
-                    </CardHeader>
-                    <CardContent className="text-base text-slate-600 leading-relaxed relative z-10">
-                      <p>Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-[#550084] font-extrabold text-lg">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
-                    </CardContent>
+                  <Card className="overflow-hidden">
+                    <div className="flex flex-col items-center pt-6 pb-5 px-5">
+                      <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
+                        <img src="/nefron.png" alt="O néfron" className="w-full h-full object-cover" />
+                      </div>
+                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-center">O néfron</h3>
+                      <p className="text-base text-slate-600 leading-relaxed text-center">Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-[#550084] font-extrabold text-lg">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
+                    </div>
                   </Card>
 
                   {/* Card 2: Filtram o sangue */}
