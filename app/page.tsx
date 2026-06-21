@@ -190,10 +190,11 @@ export default function Home() {
                   <SectionTitle>Como os rins funcionam?</SectionTitle>
                   {/* Card 1: O néfron */}
                   <Card className="overflow-hidden">
-                    <div className="flex flex-col items-center pt-6 pb-5 px-5">
-                      <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
-                        <img src="/nefron.png" alt="O néfron" className="w-full h-full object-cover" />
-                      </div>
+                    {/* Retângulo 1 — imagem: largura 100%, altura 200px */}
+                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgNefron.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+                    </div>
+                    {/* Retângulo 2 — texto: largura 100%, altura automática */}
+                    <div className="p-5">
                       <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-center">O néfron</h3>
                       <p className="text-base text-slate-600 leading-relaxed text-center">Os rins são formados por centenas de milhares de unidades funcionais chamadas <strong className="text-[#550084] font-extrabold text-lg">néfrons</strong>. Cada néfron tem um filtro (o glomérulo) e um canal longo chamado túbulo.</p>
                     </div>
@@ -201,19 +202,15 @@ export default function Home() {
 
                   {/* Card 2: Filtram o sangue */}
                   <Card className="overflow-hidden">
-                    <div className="flex flex-col items-center pt-6 pb-5 px-5">
-                      <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
-                        <img src="/sangue.png" alt="Filtração do sangue" className="w-full h-full object-cover" />
-                      </div>
+                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgSangue.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
+                    <div className="p-5">
                       <p className="text-base text-slate-600 leading-relaxed text-center">Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
                     </div>
                   </Card>
 
                   <Card className="overflow-hidden">
-                    <div className="flex flex-col items-center pt-6 pb-5 px-5">
-                      <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
-                        <img src="/vocesabia.png" alt="Você sabia?" className="w-full h-full object-cover" />
-                      </div>
+                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgvocesabia.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
+                    <div className="p-5">
                       <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-center">Você sabia?</h3>
                       <p className="text-base text-slate-600 leading-relaxed text-center">Mais de 99% do que é filtrado retorna ao sangue. A urina é apenas o subproduto desse processo de conservação.</p>
                     </div>
