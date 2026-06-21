@@ -122,10 +122,8 @@ export default function Home() {
     <div className="min-h-screen bg-slate-50">
 
       {/* MOBILE HEADER — oculto em desktop */}
-      <header className="lg:hidden relative overflow-hidden text-white" style={{ backgroundImage: "url('/bgHero.png')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "260px" }}>
-        {/* overlay roxo no topo para o texto ficar legível */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#550084] via-[#55008499] to-transparent" />
-        <div className="relative z-10 px-5 pt-8 pb-4">
+      <header className="lg:hidden relative overflow-hidden text-white bg-[#550084]" style={{ backgroundImage: "url('/bgHero.png')", backgroundSize: "cover", backgroundPosition: "left center", minHeight: "260px" }}>
+        <div className="px-5 pt-8 pb-4">
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight">Doença renal crônica<br />em cães e gatos</h1>
           <p className="text-lg text-[#e8ccff] mt-2">Guia educativo para responsáveis</p>
         </div>
