@@ -247,10 +247,22 @@ export default function Home() {
               <div className="lg:grid lg:grid-cols-2 lg:gap-6 space-y-6 lg:space-y-0">
                 <div>
                   <SectionTitle>Sinais precoces</SectionTitle>
-                  <ul className="space-y-3" aria-label="Sinais precoces de doença renal crônica">
-                    <SymptomItem variant="early" icon="🚰" title="Beber mais água (polidipsia)" desc="Cão ou gato refazendo o bebedouro com mais frequência que o normal." />
-                    <SymptomItem variant="early" icon="🪣" title="Urinar mais (poliúria)" desc="Em cães: pode urinar dentro de casa. Em gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência." />
-                  </ul>
+                  <div className="space-y-3">
+                  <Card className="overflow-hidden">
+                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgAgua.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
+                    <div className="p-5">
+                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Beber mais água (polidipsia)</h3>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Seu pet passa a visitar o bebedouro mais vezes e você percebe que precisa encher a vasilha de água com mais frequência do que antes.</p>
+                    </div>
+                  </Card>
+                  <Card className="overflow-hidden">
+                    <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgUrina.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
+                    <div className="p-5">
+                      <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Urinar mais (poliúria)</h3>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Em cães: pode urinar dentro de casa. Em gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência.</p>
+                    </div>
+                  </Card>
+                  </div>
                 </div>
                 <div>
                   <SectionTitle>Sinais em fase avançada</SectionTitle>
