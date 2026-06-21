@@ -199,11 +199,13 @@ export default function Home() {
                   </Card>
 
                   {/* Card 2: Filtram o sangue */}
-                  <Card className="relative overflow-hidden">
-                    <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('/bgSangue.png')" }} />
-                    <CardContent className="text-base text-slate-600 leading-relaxed pt-5 relative z-10">
-                      <p>Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
-                    </CardContent>
+                  <Card className="overflow-hidden">
+                    <div className="flex flex-col items-center pt-6 pb-5 px-5">
+                      <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
+                        <img src="/sangue.png" alt="Filtração do sangue" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-base text-slate-600 leading-relaxed text-center">Os rins <strong className="text-[#550084] font-extrabold text-lg">filtram o sangue</strong> o tempo todo. Eles removem o excesso de água e as substâncias que o organismo não precisa, formando a urina, enquanto mantêm no sangue componentes importantes, como células sanguíneas e proteínas grandes.</p>
+                    </div>
                   </Card>
 
                   <Alert variant="info" icon={<img src="/vocesabia.png" alt="" className="w-6 h-6 object-contain" />} title="Você sabia?">
