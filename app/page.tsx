@@ -125,7 +125,7 @@ export default function Home() {
       <header className="lg:hidden bg-[#550084] text-white px-5 pt-8 pb-7">
         <div className="flex items-center gap-4">
           <div className="w-24 h-24 flex-shrink-0">
-            <img src="/rim_transparente.png" alt="" aria-hidden="true" className="w-full h-full object-contain" />
+            <img src="/rimHero.png" alt="" aria-hidden="true" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="text-2xl font-extrabold leading-tight tracking-tight">Doença Renal em Pets</h1>
