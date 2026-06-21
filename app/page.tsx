@@ -166,6 +166,7 @@ export default function Home() {
               </a>
               .<br />Não substitui consulta veterinária.
             </p>
+            <p className="text-xs font-semibold text-[#550084] mt-2">Feito por @minutonefrovet</p>
           </div>
         </TabsList>
 
@@ -400,15 +401,18 @@ export default function Home() {
           </TabsContent>
 
           {/* FONTE — mobile only (desktop tem na sidebar) */}
-          <p className="lg:hidden text-center text-xs text-slate-400 px-4 pb-6">
-            Baseado nas diretrizes da{" "}
-            <a href="https://www.iris-kidney.com/what-pet-owners-should-know" target="_blank" rel="noopener noreferrer"
-              className="font-semibold text-[#550084] underline-offset-2 hover:underline"
-              aria-label="Visitar site da IRIS Kidney (abre em nova aba)">
-              IRIS
-            </a>
-            . Este app é educativo e não substitui a consulta veterinária.
-          </p>
+          <div className="lg:hidden text-center text-xs text-slate-400 px-4 pb-6 space-y-1">
+            <p>
+              Baseado nas diretrizes da{" "}
+              <a href="https://www.iris-kidney.com/what-pet-owners-should-know" target="_blank" rel="noopener noreferrer"
+                className="font-semibold text-[#550084] underline-offset-2 hover:underline"
+                aria-label="Visitar site da IRIS Kidney (abre em nova aba)">
+                IRIS
+              </a>
+              . Este app é educativo e não substitui a consulta veterinária.
+            </p>
+            <p className="font-semibold text-[#550084]">Feito por @minutonefrovet</p>
+          </div>
         </main>
       </Tabs>
     </div>
