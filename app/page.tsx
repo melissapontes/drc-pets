@@ -241,7 +241,7 @@ export default function Home() {
             <div className="px-4 pt-5 pb-14 lg:px-8 lg:py-8 space-y-6">
               <div className="rounded-xl p-6 bg-amber-50 text-amber-900 text-center">
                 <p className="text-6xl font-extrabold">75%</p>
-                <p className="text-base mt-2">dos rins podem já ter perdido sua função antes dos sinais se tornarem evidentes.</p>
+                <p className="text-xl mt-2">dos rins podem já ter perdido sua função antes dos sinais se tornarem evidentes.</p>
               </div>
 
               {/* Desktop: 2 colunas de sinais */}
