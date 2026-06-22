@@ -270,13 +270,13 @@ export default function Home() {
                     <SymptomItem variant="late" icon={<img src="/apatia.png" alt="" className="w-12 h-12 object-contain" />} title="Letargia" desc="Pet mais quieto, sem energia para atividades rotineiras." />
                     <SymptomItem variant="late" icon="🍽️" title="Perda de apetite" desc="Recusa ou diminuição significativa da alimentação." />
                     <SymptomItem variant="late" icon="⚖️" title="Perda de peso e pelo em mau estado" desc="Emagrecimento progressivo e pelagem opaca ou ressecada." />
-                    <SymptomItem variant="late" icon="🤢" title="Vômito (principalmente em cães)" desc="Episódios frequentes de vômito são mais comuns em cães do que em gatos." />
+                    <SymptomItem variant="late" icon="🤢" title="Vômito (principalmente em cães)" desc="Episódios frequentes de vômitos." />
                   </ul>
                 </div>
               </div>
 
-              <Alert variant="danger" title="Emergência">
-                Se o pet parar de comer, vomitar com frequência e estiver muito desidratado, procure um veterinário imediatamente.
+              <Alert variant="danger" title="Importante!">
+                Se o pet parar de comer, apresentar vômitos frequentes ou sinais de desidratação, procure um veterinário imediatamente.
               </Alert>
 
             </div>
