@@ -260,7 +260,7 @@ export default function Home() {
                     <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgUrina.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
                     <div className="p-5">
                       <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Urinar mais (poliúria)</h3>
-                      <p className="text-base text-slate-600 leading-relaxed text-left">Cães: podem urinar dentro de casa.<br />Gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência.</p>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Cães: podem começar a pedir para sair mais vezes ou voltar a urinar dentro de casa, mesmo quando antes não faziam isso.<br />Gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência.</p>
                     </div>
                   </Card>
                   </div>
@@ -268,10 +268,11 @@ export default function Home() {
                 <div>
                   <SectionTitle>Sinais em fase avançada</SectionTitle>
                   <ul className="space-y-3" aria-label="Sinais avançados de doença renal crônica">
-                    <SymptomItem variant="late" icon={<img src="/apatia.png" alt="" className="w-12 h-12 object-contain" />} title="Letargia" desc="Pet mais quieto, sem energia para atividades rotineiras." />
-                    <SymptomItem variant="late" icon="🍽️" title="Perda de apetite" desc="Recusa ou diminuição significativa da alimentação." />
-                    <SymptomItem variant="late" icon="⚖️" title="Perda de peso e pelo em mau estado" desc="Emagrecimento progressivo e pelagem opaca ou ressecada." />
-                    <SymptomItem variant="late" icon="🤢" title="Vômito (principalmente em cães)" desc="Episódios frequentes de vômitos." />
+                    <SymptomItem variant="late" icon={<img src="/apatia.png" alt="" className="w-16 h-16 object-contain" />} title="Letargia" desc="Pet mais quieto, sem energia para atividades rotineiras." />
+                    <SymptomItem variant="late" icon={<img src="/pratoCheio.png" alt="" className="w-12 h-12 object-contain" />} title="Perda de apetite" desc="Recusa ou diminuição significativa da alimentação." />
+                    <SymptomItem variant="late" icon={<img src="/peso.png" alt="" className="w-16 h-16 object-contain" />} title="Perda de peso" desc="Emagrecimento progressivo mesmo com alimentação." />
+                    <SymptomItem variant="late" icon={<img src="/pelo.png" alt="" className="w-16 h-16 object-contain" />} title="Pelo em mau estado" desc="Pelagem opaca, ressecada ou com queda excessiva." />
+                    <SymptomItem variant="late" icon={<img src="/vomito.png" alt="" className="w-16 h-16 object-contain" />} title="Vômitos" desc="Episódios frequentes de vômitos." />
                   </ul>
                 </div>
               </div>
