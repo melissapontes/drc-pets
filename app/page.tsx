@@ -239,9 +239,10 @@ export default function Home() {
             </div>
 
             <div className="px-4 pt-5 pb-14 lg:px-8 lg:py-8 space-y-6">
-              <Alert variant="warning" title="Atenção">
-                A DRC pode progredir lentamente. Quando alguns sinais aparecem, os rins podem ja ter perdido cerca de 75% da função.
-              </Alert>
+              <div className="rounded-xl p-6 bg-amber-50 text-amber-900 text-center">
+                <p className="text-6xl font-extrabold">75%</p>
+                <p className="text-base mt-2">dos rins podem já ter perdido sua função antes dos sinais se tornarem evidentes.</p>
+              </div>
 
               {/* Desktop: 2 colunas de sinais */}
               <div className="lg:grid lg:grid-cols-2 lg:gap-6 space-y-6 lg:space-y-0">
