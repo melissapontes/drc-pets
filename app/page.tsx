@@ -14,11 +14,11 @@ function SymptomItem({
     variant === "late"  ? "border-l-red-400"   :
                           "border-l-slate-200";
   return (
-    <li className={`flex gap-3 items-center bg-white rounded-2xl p-4 shadow-sm border-l-4 ${border}`}>
+    <li className="flex gap-3 items-center bg-white rounded-2xl p-4 shadow-sm">
       <span className="flex-shrink-0 w-16 flex items-center justify-center" aria-hidden="true">{icon}</span>
       <div>
-        <p className="font-semibold text-slate-800 text-base leading-snug">{title}</p>
-        <p className="text-slate-500 text-sm mt-0.5 leading-relaxed">{desc}</p>
+        <p className="font-semibold text-slate-800 text-lg leading-snug">{title}</p>
+        <p className="text-slate-500 text-base mt-0.5 leading-relaxed">{desc}</p>
       </div>
     </li>
   );
@@ -259,7 +259,7 @@ export default function Home() {
                     <div className="w-full h-[200px]" style={{ backgroundImage: "url('/bgUrina.png')", backgroundSize: "cover", backgroundPosition: "center" }} />
                     <div className="p-5">
                       <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Urinar mais (poliúria)</h3>
-                      <p className="text-base text-slate-600 leading-relaxed text-left">Cães: pode urinar dentro de casa.<br />Gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência.</p>
+                      <p className="text-base text-slate-600 leading-relaxed text-left">Cães: podem urinar dentro de casa.<br />Gatos: caixinha com mais grumos úmidos, precisando ser limpa com mais frequência.</p>
                     </div>
                   </Card>
                   </div>
@@ -267,7 +267,7 @@ export default function Home() {
                 <div>
                   <SectionTitle>Sinais em fase avançada</SectionTitle>
                   <ul className="space-y-3" aria-label="Sinais avançados de doença renal crônica">
-                    <SymptomItem variant="late" icon="😴" title="Letargia" desc="Pet mais quieto, sem energia para atividades rotineiras." />
+                    <SymptomItem variant="late" icon={<img src="/apatia.png" alt="" className="w-12 h-12 object-contain" />} title="Letargia" desc="Pet mais quieto, sem energia para atividades rotineiras." />
                     <SymptomItem variant="late" icon="🍽️" title="Perda de apetite" desc="Recusa ou diminuição significativa da alimentação." />
                     <SymptomItem variant="late" icon="⚖️" title="Perda de peso e pelo em mau estado" desc="Emagrecimento progressivo e pelagem opaca ou ressecada." />
                     <SymptomItem variant="late" icon="🤢" title="Vômito (principalmente em cães)" desc="Episódios frequentes de vômito são mais comuns em cães do que em gatos." />
