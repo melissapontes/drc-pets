@@ -277,9 +277,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <Alert variant="danger" title="Importante!">
-                Se o pet parar de comer, apresentar vômitos frequentes ou sinais de desidratação, procure um veterinário imediatamente.
-              </Alert>
+              <div className="rounded-xl p-4 flex gap-3 items-start text-lg" style={{ background: "#FFF1F1" }}>
+                <img src="/alerta.png" alt="" className="w-10 h-10 object-contain flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-lg mb-1" style={{ color: "#880304" }}>Quando procurar ajuda veterinária</p>
+                  <p style={{ color: "#880304" }}>Se o pet parar de comer, apresentar vômitos frequentes ou sinais de desidratação.</p>
+                </div>
+              </div>
 
             </div>
           </TabsContent>
