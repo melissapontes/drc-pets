@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className={`${poppins.className} bg-slate-50 text-slate-900 min-h-screen antialiased`}>
+      <body className={`${poppins.className} bg-white text-slate-900 min-h-screen antialiased`}>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:z-[9999] focus:bg-[#550084] focus:text-white focus:px-4 focus:py-3 focus:rounded-br-xl focus:font-semibold"

@@ -118,7 +118,7 @@ const faqs = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-white">
 
       {/* MOBILE HEADER — oculto em desktop */}
       <header className="lg:hidden text-white overflow-hidden flex items-center" style={{ backgroundImage: "url('/bgHero2.png')", backgroundSize: "cover", backgroundPosition: "right center", minHeight: "200px" }}>
@@ -298,26 +298,18 @@ export default function Home() {
             <div className="px-4 pt-5 pb-14 lg:px-8 lg:py-8 space-y-6">
               <Card className="overflow-hidden">
                 <div className="p-5">
-                  <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Seu pet está em qual fase?</h3>
+                  <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Conheça as fases da DRC</h3>
                   <p className="text-base text-slate-600 leading-relaxed text-left">A DRC é dividida em 4 estágios. Saber em qual fase o pet está ajuda o veterinário a definir metas individualizadas e permite que o responsável acompanhe sua evolução de forma mais clara e participativa.</p>
                 </div>
               </Card>
 
-              {/* Timeline */}
-              <div className="relative py-2 flex flex-col items-center" role="list" aria-label="Estágios da DRC segundo a IRIS">
-                {/* linha curva SVG — coluna estreita centralizada, passa pelo centro de cada círculo */}
-                <svg className="absolute top-0 left-1/2 -translate-x-1/2 h-full pointer-events-none" style={{ width: 130 }} viewBox="0 0 100 400" preserveAspectRatio="none" aria-hidden="true">
-                  <path d="M 50 50 C 50 90 88 110 50 150 C 12 190 12 210 50 250 C 88 290 88 310 50 350" stroke="#cbd5e1" strokeWidth="2" fill="none" strokeLinecap="round" />
-                </svg>
-
-                <div className="space-y-12 flex flex-col items-center">
-                  {stages.map((s) => (
-                    <article key={s.n} role="listitem" aria-label={s.label} className="relative z-10">
-                      <div className={`w-14 h-14 rounded-full ${s.color} flex items-center justify-center text-white font-extrabold text-xl shadow-lg`}>
-                        {s.n}
-                      </div>
-                    </article>
-                  ))}
+              <div className="flex mx-auto" style={{ maxWidth: '340px' }}>
+                <img src="/bgestadio.jpeg" alt="Estágios da DRC" className="block object-contain flex-shrink-0" style={{ width: '200px' }} />
+                <div className="relative flex-1 ml-3">
+                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '13%', transform: 'translateY(-50%)' }}>Doença inicial</span>
+                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '37%', transform: 'translateY(-50%)' }}>Doença leve</span>
+                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '62%', transform: 'translateY(-50%)' }}>Doença moderada</span>
+                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '86%', transform: 'translateY(-50%)' }}>Doença avançada</span>
                 </div>
               </div>
             </div>
