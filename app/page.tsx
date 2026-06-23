@@ -1,7 +1,6 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 // ── Componentes reutilizáveis ─────────────────────────────────────────────────
@@ -56,26 +55,26 @@ function PageTitle({ children }: { children: React.ReactNode }) {
 
 const stages = [
   {
-    n: 1, label: "Estádio 1", title: "Doença inicial", pct: 25,
+    n: 1, label: "Estágio 1", title: "Doença inicial", pct: 25,
     color: "bg-emerald-500", border: "border-t-emerald-500", badgeVariant: "stage1" as const,
     desc: "Creatinina dentro do valor de referência. Função renal com perda leve detectada por SDMA ou outros marcadores.",
     chips: ["SDMA elevado", "Sem sintomas óbvios"],
   },
   {
-    n: 2, label: "Estádio 2", title: "Doença leve", pct: 50,
+    n: 2, label: "Estágio 2", title: "Doença leve", pct: 50,
     color: "bg-yellow-400", border: "border-t-yellow-400", badgeVariant: "stage2" as const,
     desc: "Creatinina levemente elevada. Poliúria e polidipsia podem começar a aparecer.",
     chips: ["Beber mais água", "Urinar mais"],
     note: "Melhor momento para iniciar a dieta renal — o pet ainda tem bom apetite.",
   },
   {
-    n: 3, label: "Estádio 3", title: "Doença moderada", pct: 75,
+    n: 3, label: "Estágio 3", title: "Doença moderada", pct: 75,
     color: "bg-orange-500", border: "border-t-orange-500", badgeVariant: "stage3" as const,
     desc: "Creatinina e fósforo elevados. Sintomas mais evidentes: letargia, perda de peso.",
     chips: ["Fósforo alto", "Letargia", "Perda de peso"],
   },
   {
-    n: 4, label: "Estádio 4", title: "Doença grave", pct: 100,
+    n: 4, label: "Estágio 4", title: "Doença grave", pct: 100,
     color: "bg-red-600", border: "border-t-red-600", badgeVariant: "stage4" as const,
     desc: "Creatinina muito elevada. Risco de vida: desidratação grave, desequilíbrio eletrolítico, acidose.",
     chips: ["Vômito frequente", "Sem comer", "Desidratação"],
@@ -96,7 +95,7 @@ const faqs = [
   {
     id: "faq-3",
     q: "Quando devo iniciar a dieta renal?",
-    a: ["O momento ideal é o Estádio 2 ou 3 da IRIS, quando o pet ainda tem bom apetite para aceitar a mudança alimentar.", "A transição deve ser gradual ao longo de semanas: misture progressivamente o alimento renal com o habitual até a substituição completa."],
+    a: ["O momento ideal é o Estágio 2 ou 3 da IRIS, quando o pet ainda tem bom apetite para aceitar a mudança alimentar.", "A transição deve ser gradual ao longo de semanas: misture progressivamente o alimento renal com o habitual até a substituição completa."],
   },
   {
     id: "faq-4",
@@ -111,7 +110,7 @@ const faqs = [
   {
     id: "faq-6",
     q: "Com que frequência devo levar meu pet ao veterinário?",
-    a: ["Para pets mais velhos, visitas anuais com exames de sangue são recomendadas para detectar DRC precocemente — mesmo quando BUN e creatinina ainda estão dentro do normal.", "Para pets já diagnosticados, a frequência depende do estádio e orientação do veterinário."],
+    a: ["Para pets mais velhos, visitas anuais com exames de sangue são recomendadas para detectar DRC precocemente — mesmo quando BUN e creatinina ainda estão dentro do normal.", "Para pets já diagnosticados, a frequência depende do estágio e orientação do veterinário."],
   },
 ];
 
@@ -151,7 +150,7 @@ export default function Home() {
 
           <TabsTrigger value="rins"><img src="/rim.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Os Rins</TabsTrigger>
           <TabsTrigger value="sinais"><img src="/sinais.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Sinais</TabsTrigger>
-          <TabsTrigger value="estadios"><img src="/estadios.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Estádios</TabsTrigger>
+          <TabsTrigger value="estadios"><img src="/estadios.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Estágios</TabsTrigger>
           <TabsTrigger value="tratamento"><img src="/tratamentro.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Tratamento</TabsTrigger>
           <TabsTrigger value="faq"><img src="/duvidas.png" alt="" aria-hidden="true" className="w-6 h-6 rounded object-cover inline-block" /> Dúvidas</TabsTrigger>
 
@@ -270,7 +269,7 @@ export default function Home() {
                   <ul className="space-y-3" aria-label="Sinais avançados de doença renal crônica">
                     <SymptomItem variant="late" icon={<img src="/apatia.png" alt="" className="w-16 h-16 object-contain" />} title="Letargia" desc="Pet mais quieto, sem energia para atividades rotineiras." />
                     <SymptomItem variant="late" icon={<img src="/pratoCheio.png" alt="" className="w-12 h-12 object-contain" />} title="Perda de apetite" desc="Recusa ou diminuição significativa da alimentação." />
-                    <SymptomItem variant="late" icon={<img src="/peso.png" alt="" className="w-16 h-16 object-contain" />} title="Perda de peso" desc="Emagrecimento progressivo mesmo com alimentação." />
+                    <SymptomItem variant="late" icon={<img src="/peso.png" alt="" className="w-16 h-16 object-contain" />} title="Perda de peso" desc="Emagrecimento progressivo mesmo se alimentando." />
                     <SymptomItem variant="late" icon={<img src="/pelo.png" alt="" className="w-16 h-16 object-contain" />} title="Pelo em mau estado" desc="Pelagem opaca, ressecada ou com queda excessiva." />
                     <SymptomItem variant="late" icon={<img src="/vomito.png" alt="" className="w-16 h-16 object-contain" />} title="Vômitos" desc="Episódios frequentes de vômitos." />
                   </ul>
@@ -292,36 +291,34 @@ export default function Home() {
           <TabsContent value="estadios">
             <div className="hidden lg:block bg-white border-b border-slate-100 px-8 py-6">
               <span className="text-xs font-bold text-[#550084] uppercase tracking-widest">Classificação IRIS</span>
-              <PageTitle>Estádios da doença renal crônica</PageTitle>
-              <p className="text-sm text-slate-500">Quatro estádios progressivos que orientam o tratamento adequado.</p>
+              <PageTitle>Estágios da doença renal crônica</PageTitle>
+              <p className="text-sm text-slate-500">Quatro estágios progressivos que orientam o tratamento adequado.</p>
             </div>
 
             <div className="px-4 pt-5 pb-14 lg:px-8 lg:py-8 space-y-6">
-              <Alert variant="info" icon="📋" title="Classificação IRIS">
-                A International Renal Interest Society (IRIS) classifica a DRC em 4 estádios para guiar o tratamento adequado em cada fase.
-              </Alert>
+              <Card className="overflow-hidden">
+                <div className="p-5">
+                  <h3 className="text-xl font-extrabold text-[#550084] mb-2 text-left">Seu pet está em qual fase?</h3>
+                  <p className="text-base text-slate-600 leading-relaxed text-left">A DRC é dividida em 4 estágios. Saber em qual fase o pet está ajuda o veterinário a definir metas individualizadas e permite que o responsável acompanhe sua evolução de forma mais clara e participativa.</p>
+                </div>
+              </Card>
 
-              {/* Desktop: grid 2x2 */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" role="list" aria-label="Estádios da DRC segundo a IRIS">
-                {stages.map((s) => (
-                  <article key={s.n} role="listitem" aria-label={`${s.label}: ${s.title}`}
-                    className={`bg-white rounded-2xl shadow-sm border-t-4 ${s.border} p-5 space-y-3`}>
-                    <div className="flex items-center gap-2.5">
-                      <Badge variant={s.badgeVariant}>{s.label}</Badge>
-                      <span className="font-bold text-slate-800 text-base">{s.title}</span>
-                    </div>
-                    <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden" aria-hidden="true">
-                      <div className={`h-full ${s.color} rounded-full`} style={{ width: `${s.pct}%` }} />
-                    </div>
-                    <p className="text-base text-slate-600 leading-relaxed">{s.desc}</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {s.chips.map((c) => (
-                        <span key={c} className="bg-slate-100 text-slate-600 text-xs font-medium rounded-full px-2.5 py-0.5">{c}</span>
-                      ))}
-                    </div>
-                    {s.note && <p className="text-xs text-emerald-700 bg-emerald-50 rounded-lg px-3 py-2">{s.note}</p>}
-                  </article>
-                ))}
+              {/* Timeline */}
+              <div className="relative py-2 flex flex-col items-center" role="list" aria-label="Estágios da DRC segundo a IRIS">
+                {/* linha curva SVG — coluna estreita centralizada, passa pelo centro de cada círculo */}
+                <svg className="absolute top-0 left-1/2 -translate-x-1/2 h-full pointer-events-none" style={{ width: 130 }} viewBox="0 0 100 400" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M 50 50 C 50 90 88 110 50 150 C 12 190 12 210 50 250 C 88 290 88 310 50 350" stroke="#cbd5e1" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </svg>
+
+                <div className="space-y-12 flex flex-col items-center">
+                  {stages.map((s) => (
+                    <article key={s.n} role="listitem" aria-label={s.label} className="relative z-10">
+                      <div className={`w-14 h-14 rounded-full ${s.color} flex items-center justify-center text-white font-extrabold text-xl shadow-lg`}>
+                        {s.n}
+                      </div>
+                    </article>
+                  ))}
+                </div>
               </div>
             </div>
           </TabsContent>
