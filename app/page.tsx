@@ -23,13 +23,19 @@ function SymptomItem({
   );
 }
 
-function TreatItem({ icon, title, desc }: { icon: string; title: string; desc: string }) {
+function TreatItem({ title, desc, color, textWhite, imgIcon, imgSize }: { icon?: string; title: string; desc: string; color?: string; textWhite?: boolean; imgIcon?: string; imgSize?: string }) {
   return (
-    <li className="flex gap-3 bg-white rounded-2xl p-4 shadow-sm border border-slate-100 h-full">
-      <span className="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">{icon}</span>
-      <div>
-        <p className="font-semibold text-slate-800 text-base leading-snug">{title}</p>
-        <p className="text-slate-500 text-sm mt-0.5 leading-relaxed">{desc}</p>
+    <li className="rounded-2xl overflow-hidden shadow-sm" style={{ background: color ?? "#ffffff" }}>
+      <div className="px-4 py-4 flex items-center gap-3">
+        {imgIcon && (
+          <div className="w-16 flex-shrink-0 flex items-center justify-center">
+            <img src={imgIcon} alt="" aria-hidden="true" className={`object-contain ${imgSize ?? "w-16 h-16"}`} />
+          </div>
+        )}
+        <div>
+          <p className={`font-bold text-base leading-snug ${textWhite ? "text-white" : "text-slate-800"}`}>{title}</p>
+          <p className={`text-sm mt-1 leading-relaxed ${textWhite ? "text-white/80" : "text-slate-500"}`}>{desc}</p>
+        </div>
       </div>
     </li>
   );
@@ -306,10 +312,10 @@ export default function Home() {
               <div className="flex mx-auto" style={{ maxWidth: '340px' }}>
                 <img src="/bgestadio.jpeg" alt="Estágios da DRC" className="block object-contain flex-shrink-0" style={{ width: '200px' }} />
                 <div className="relative flex-1 ml-3">
-                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '13%', transform: 'translateY(-50%)' }}>Doença inicial</span>
-                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '37%', transform: 'translateY(-50%)' }}>Doença leve</span>
-                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '62%', transform: 'translateY(-50%)' }}>Doença moderada</span>
-                  <span className="absolute text-xs font-bold text-slate-800 leading-tight" style={{ top: '86%', transform: 'translateY(-50%)' }}>Doença avançada</span>
+                  <span className="absolute text-xl font-bold leading-tight" style={{ top: '13%', transform: 'translateY(-50%)', color: '#10b981' }}>Doença inicial</span>
+                  <span className="absolute text-xl font-bold leading-tight" style={{ top: '37%', transform: 'translateY(-50%)', color: '#3b82f6' }}>Doença leve</span>
+                  <span className="absolute text-xl font-bold leading-tight" style={{ top: '62%', transform: 'translateY(-50%)', color: '#ef4444' }}>Doença moderada</span>
+                  <span className="absolute text-xl font-bold leading-tight" style={{ top: '86%', transform: 'translateY(-50%)', color: '#f97316' }}>Doença avançada</span>
                 </div>
               </div>
             </div>
@@ -333,25 +339,26 @@ export default function Home() {
                 <div>
                   <SectionTitle>Cuidados essenciais em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados essenciais em casa">
-                    <TreatItem icon="💧" title="Água sempre disponível" desc="Nunca restrinja o acesso à água. O pet com DRC precisa beber muito para compensar a urina diluída. Restringir causa desidratação grave." />
-                    <TreatItem icon="🥣" title="Dieta renal específica" desc="Alimentos terapêuticos com baixo fósforo, proteína moderada e baixo sódio. Transição gradual ao longo de semanas. Estudos mostram que gatos com dieta renal vivem até o dobro do tempo." />
+                    <TreatItem title="Água sempre disponível" desc="Nunca restrinja o acesso à água. O pet com DRC precisa beber água livremente para compensar as perdas pela urina. Restringir pode causar desidratação, agravando o quadro." color="#028ff9" textWhite imgIcon="/gotaBranca.png" />
+                    <TreatItem title="Dieta renal específica" desc="Alimentos terapêuticos com baixo fósforo, proteína moderada e baixo sódio. Transição gradual ao longo de semanas. Estudos mostram que gatos com dieta renal vivem até o dobro do tempo." color="#eb733a" textWhite imgIcon="/comidaBranca.png" imgSize="w-20 h-20" />
                   </ul>
 
                   <SectionTitle>Cuidados avançados em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados avançados em casa">
-                    <TreatItem icon="💉" title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar soro (Ringer Lactato) sob a pele do pet em casa quando ele não está se hidratando o suficiente." />
-                    <TreatItem icon="🍽️" title="Sonda de alimentação (gatos)" desc="Em gatos com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos em casa." />
+                    <TreatItem title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar soro (Ringer Lactato) sob a pele do pet em casa quando ele não está se hidratando o suficiente." color="#03ab94" textWhite />
+                    <TreatItem title="Sonda de alimentação (gatos)" desc="Em gatos com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos em casa." color="#2e1360" textWhite />
                   </ul>
                 </div>
 
                 <div>
                   <SectionTitle>Tratamentos prescritos pelo veterinário</SectionTitle>
                   <ul className="space-y-3" aria-label="Tratamentos médicos para DRC">
-                    <TreatItem icon="🧲" title="Quelantes de fósforo" desc="Medicamentos que se ligam ao fósforo no intestino e impedem sua absorção. Devem ser dados na hora da refeição e com orientação veterinária." />
-                    <TreatItem icon="🩺" title="Controle da pressão arterial" desc="Hipertensão é complicação tratável. Medicamentos como amlodipina podem ser usados. A medição requer técnica cuidadosa para evitar resultado falso." />
-                    <TreatItem icon="🛡️" title="Inibidores do sistema renina-angiotensina" desc="Benazepril (IECA) ou telmisartana (BRA) para reduzir a perda de proteína na urina e proteger os rins." />
-                    <TreatItem icon="💊" title="Controle de vômito e apetite" desc="Antieméticos (maropitant, ondansetron) para vômito. Mirtazapina para estimular o apetite em gatos (também reduz vômito)." />
-                    <TreatItem icon="🩸" title="Eritropoetina e calcitriol" desc="Usados em casos avançados para tratar anemia e desequilíbrio de cálcio. Requerem acompanhamento especializado." />
+                    <TreatItem title="Quelantes de fósforo" desc="Medicamentos que se ligam ao fósforo no intestino e impedem sua absorção. Devem ser dados na hora da refeição e com orientação veterinária." color="#87c522" textWhite />
+                    <TreatItem title="Controle da pressão arterial" desc="Hipertensão é complicação tratável. Medicamentos como amlodipina podem ser usados. A medição requer técnica cuidadosa para evitar resultado falso." color="#c02c8c" textWhite />
+                    <TreatItem title="Inibidores do sistema renina-angiotensina" desc="Benazepril (IECA) ou telmisartana (BRA) para reduzir a perda de proteína na urina e proteger os rins." color="#74629f" textWhite />
+                    <TreatItem title="Controle de vômito e apetite" desc="Antieméticos (maropitant, ondansetron) para vômito. Mirtazapina para estimular o apetite em gatos (também reduz vômito)." color="#0c88a9" textWhite />
+                    <TreatItem title="Eritropoetina" desc="Usada em casos avançados para tratar anemia. Requer acompanhamento especializado." color="#97150b" textWhite />
+                    <TreatItem title="Calcitriol" desc="Usado em casos avançados para corrigir o desequilíbrio de cálcio. Requer acompanhamento especializado." color="#8c7ca1" textWhite />
                   </ul>
                 </div>
               </div>
