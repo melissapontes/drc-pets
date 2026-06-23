@@ -340,7 +340,7 @@ export default function Home() {
                   <SectionTitle>Cuidados essenciais em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados essenciais em casa">
                     <TreatItem title="Água sempre disponível" desc="Nunca restrinja o acesso à água. O pet com DRC precisa beber água livremente para compensar as perdas pela urina. Restringir pode causar desidratação, agravando o quadro." color="#028ff9" textWhite imgIcon="/gotaBranca.png" />
-                    <TreatItem title="Dieta renal específica" desc="Alimentos terapêuticos com baixo fósforo, proteína moderada e baixo sódio. Transição gradual ao longo de semanas. Estudos mostram que gatos com dieta renal vivem até o dobro do tempo." color="#eb733a" textWhite imgIcon="/comidaBranca.png" imgSize="w-20 h-20" />
+                    <TreatItem title="Dieta renal" desc="Alimentos terapêuticos com baixo fósforo, proteína moderada e baixo sódio. Transição gradual ao longo de semanas. Estudos mostram que gatos com dieta renal vivem até o dobro do tempo." color="#eb733a" textWhite imgIcon="/comidaBranca.png" imgSize="w-20 h-20" />
                   </ul>
 
                   <SectionTitle>Cuidados avançados em casa</SectionTitle>
