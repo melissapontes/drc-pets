@@ -33,8 +33,8 @@ function TreatItem({ title, desc, color, textWhite, imgIcon, imgSize }: { icon?:
           </div>
         )}
         <div>
-          <p className={`font-bold text-base leading-snug ${textWhite ? "text-white" : "text-slate-800"}`}>{title}</p>
-          <p className={`text-sm mt-1 leading-relaxed ${textWhite ? "text-white/80" : "text-slate-500"}`}>{desc}</p>
+          <p className={`font-bold text-lg leading-snug ${textWhite ? "text-white" : "text-slate-800"}`}>{title}</p>
+          <p className={`text-base mt-1 leading-relaxed ${textWhite ? "text-white/80" : "text-slate-500"}`}>{desc}</p>
         </div>
       </div>
     </li>
