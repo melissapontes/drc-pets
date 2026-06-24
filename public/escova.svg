@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360">
+  <rect width="800" height="360" fill="#EAF7F5"/>
+  <g transform="rotate(-12 400 180)">
+    <!-- cerdas -->
+    <g fill="#04695a">
+      <rect x="150" y="120" width="14" height="44" rx="5"/>
+      <rect x="172" y="112" width="14" height="52" rx="5"/>
+      <rect x="194" y="112" width="14" height="52" rx="5"/>
+      <rect x="216" y="120" width="14" height="44" rx="5"/>
+    </g>
+    <!-- cabeça da escova -->
+    <rect x="138" y="160" width="108" height="40" rx="14" fill="#03ab94"/>
+    <!-- cabo -->
+    <rect x="240" y="166" width="430" height="30" rx="15" fill="#03ab94"/>
+    <!-- ponta arredondada do cabo -->
+    <circle cx="668" cy="181" r="22" fill="#03ab94"/>
+    <!-- patinha decorativa no cabo -->
+    <g fill="#ffffff">
+      <circle cx="520" cy="181" r="11"/>
+      <circle cx="507" cy="169" r="4.5"/>
+      <circle cx="520" cy="165" r="4.5"/>
+      <circle cx="533" cy="169" r="4.5"/>
+    </g>
+  </g>
+</svg>

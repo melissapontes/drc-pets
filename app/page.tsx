@@ -383,11 +383,13 @@ export default function Home() {
               </div>
 
               {/* Dica — saúde bucal e rins */}
-              <div className="rounded-2xl overflow-hidden shadow-sm flex" style={{ background: "#EAF7F5" }}>
-                <div className="w-2 flex-shrink-0" style={{ background: "#03ab94" }} />
+              <div className="rounded-2xl overflow-hidden shadow-sm bg-white flex flex-col">
+                <div className="h-44 overflow-hidden" style={{ background: "#EAF7F5" }}>
+                  <img src="/escova.svg" alt="" aria-hidden="true" className="w-full h-full object-contain scale-[1.7] origin-center" />
+                </div>
                 <div className="px-5 py-5">
-                  <p className="font-bold text-xl mb-1 flex items-center gap-2" style={{ color: "#04695a" }}>
-                    <span aria-hidden="true">💡</span> Dica: cuide dos dentes do seu pet
+                  <p className="font-bold text-xl mb-1" style={{ color: "#04695a" }}>
+                    Dica: cuide dos dentes do seu pet
                   </p>
                   <p className="text-lg leading-relaxed" style={{ color: "#04695a" }}>
                     A escovação regular dos dentes ajuda a controlar a doença periodontal. Quando as gengivas estão
