@@ -1,6 +1,5 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
-import { Alert } from "@/components/ui/alert";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 // ── Componentes reutilizáveis ─────────────────────────────────────────────────
@@ -330,9 +329,18 @@ export default function Home() {
             </div>
 
             <div className="px-4 pt-5 pb-14 lg:px-8 lg:py-8 space-y-6">
-              <Alert variant="success" icon="✅" title="Boas notícias">
-                Com manejo adequado, alguns cães e gatos com DRC vivem vários anos com boa qualidade de vida.
-              </Alert>
+              {/* Card destacado — boas notícias */}
+              <div className="rounded-2xl overflow-hidden shadow-sm bg-white flex flex-col">
+                <div className="h-44 bg-[#E8F5E9] flex items-center justify-center">
+                  <img src="/focinho.png" alt="" aria-hidden="true" className="h-28 object-contain" />
+                </div>
+                <div className="px-5 py-5 text-center">
+                  <p className="font-extrabold text-emerald-700 text-xl leading-snug mb-1">Boas notícias</p>
+                  <p className="font-semibold text-slate-700 text-lg leading-snug">
+                    Com manejo adequado, alguns cães e gatos com DRC vivem vários anos com boa qualidade de vida.
+                  </p>
+                </div>
+              </div>
 
               {/* Desktop: 2 colunas */}
               <div className="lg:grid lg:grid-cols-2 lg:gap-8 space-y-6 lg:space-y-0">
@@ -344,12 +352,12 @@ export default function Home() {
                   </ul>
 
                   {/* Card quadrado destacado — estudo dieta renal */}
-                  <div className="mt-3 rounded-2xl overflow-hidden shadow-sm bg-white aspect-square flex flex-col">
-                    <div className="flex-1 min-h-0 bg-[#FDEBD3]">
-                      <img src="/gato.svg" alt="Gato" className="w-full h-full object-cover" />
+                  <div className="mt-3 rounded-2xl overflow-hidden shadow-sm bg-white flex flex-col">
+                    <div className="h-44 bg-[#FDEBD3]">
+                      <img src="/bggato.png" alt="Gato" className="w-full h-full object-cover" />
                     </div>
-                    <p className="px-4 py-4 text-center font-bold text-slate-800 text-lg leading-snug">
-                      Alguns estudos mostram que gatos com dieta renal vivem até o dobro do tempo.
+                    <p className="px-5 py-5 text-center font-bold text-slate-800 text-xl leading-snug">
+                      Alguns estudos mostram que cuidar da dieta pode proporcionar maior longevidade ao animal.
                     </p>
                   </div>
 
