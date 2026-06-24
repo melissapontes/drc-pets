@@ -32,8 +32,8 @@ function TreatItem({ title, desc, color, textWhite, imgIcon, imgSize }: { icon?:
           </div>
         )}
         <div>
-          <p className={`font-bold text-lg leading-snug ${textWhite ? "text-white" : "text-slate-800"}`}>{title}</p>
-          <p className={`text-base mt-1 leading-relaxed ${textWhite ? "text-white/80" : "text-slate-500"}`}>{desc}</p>
+          <p className={`font-bold text-xl leading-snug ${textWhite ? "text-white" : "text-slate-800"}`}>{title}</p>
+          <p className={`text-lg mt-1 leading-relaxed ${textWhite ? "text-white/90" : "text-slate-600"}`}>{desc}</p>
         </div>
       </div>
     </li>
@@ -331,11 +331,10 @@ export default function Home() {
             <div className="px-4 pt-5 pb-14 lg:px-8 lg:py-8 space-y-6">
               {/* Card destacado — boas notícias */}
               <div className="rounded-2xl overflow-hidden shadow-sm bg-white flex flex-col">
-                <div className="h-44 bg-[#E8F5E9] flex items-center justify-center">
-                  <img src="/focinho.png" alt="" aria-hidden="true" className="h-28 object-contain" />
+                <div className="h-56 bg-[#E8F5E9] overflow-hidden">
+                  <img src="/bgcaoegato.png" alt="" aria-hidden="true" className="w-full h-full object-contain scale-[1.6] origin-center" />
                 </div>
                 <div className="px-5 py-5 text-center">
-                  <p className="font-extrabold text-emerald-700 text-xl leading-snug mb-1">Boas notícias</p>
                   <p className="font-semibold text-slate-700 text-lg leading-snug">
                     Com manejo adequado, alguns cães e gatos com DRC vivem vários anos com boa qualidade de vida.
                   </p>
@@ -363,7 +362,7 @@ export default function Home() {
 
                   <SectionTitle>Cuidados avançados em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados avançados em casa">
-                    <TreatItem title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar soro (Ringer Lactato) sob a pele do pet em casa quando ele não está se hidratando o suficiente." color="#03ab94" textWhite />
+                    <TreatItem title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar soro sob a pele do pet em casa quando ele não está se hidratando o suficiente." color="#03ab94" textWhite />
                     <TreatItem title="Sonda de alimentação (gatos)" desc="Em gatos com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos em casa." color="#2e1360" textWhite />
                   </ul>
                 </div>
