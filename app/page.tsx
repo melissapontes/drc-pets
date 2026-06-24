@@ -90,7 +90,7 @@ const faqs = [
   {
     id: "faq-1",
     q: "Quanto tempo meu pet vai viver com DRC?",
-    a: ["Não é possível prever com certeza, pois a velocidade de progressão varia muito entre cada animal. O veterinário pode acompanhar a tendência da creatinina ao longo dos meses para estimar a progressão.", "Com manejo consciente pelo responsável e pelo veterinário, alguns pets com DRC vivem vários anos com qualidade de vida."],
+    a: ["Não é possível prever com certeza, pois a velocidade de progressão da doença varia entre os animais. O médico veterinário utiliza exames, sinais clínicos e a resposta ao tratamento para acompanhar a doença ao longo do tempo e orientar os cuidados mais adequados.", "Com acompanhamento veterinário contínuo e os cuidados do responsável, muitos pets com DRC podem viver por vários anos com qualidade de vida."],
   },
   {
     id: "faq-2",
