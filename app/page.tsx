@@ -365,7 +365,7 @@ export default function Home() {
                   <SectionTitle>Cuidados avançados em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados avançados em casa">
                     <TreatItem title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar fluido sob a pele do pet em casa, quando ele não está se hidratando o suficiente. O tipo, a quantidade e a frequência da fluidoterapia devem ser determinadas pelo veterinário." color="#03ab94" textWhite />
-                    <TreatItem title="Sonda de alimentação (gatos)" desc="Em gatos com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos, em casa." color="#2e1360" textWhite />
+                    <TreatItem title="Sonda de alimentação" desc="Em pets com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos, em casa." color="#2e1360" textWhite />
                   </ul>
                 </div>
 
