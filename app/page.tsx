@@ -95,27 +95,27 @@ const faqs = [
   {
     id: "faq-2",
     q: "Posso restringir a água para o pet urinar menos?",
-    a: ["Nunca. Pets com DRC não conseguem concentrar a urina e perdem muita água pelo xixi. Restrição de água causa desidratação grave e piora muito o quadro clínico.", "Deixe sempre água fresca disponível à vontade."],
+    a: ["Não deve. Pets com DRC não conseguem concentrar a urina e perdem muita água. Restrição de água pode causar desidratação grave e piorar o quadro clínico.", "Deixe sempre água fresca disponível à vontade."],
   },
   {
     id: "faq-3",
-    q: "Quando devo iniciar a dieta renal?",
-    a: ["O momento ideal é o Estágio 2 ou 3 da IRIS, quando o pet ainda tem bom apetite para aceitar a mudança alimentar.", "A transição deve ser gradual ao longo de semanas: misture progressivamente o alimento renal com o habitual até a substituição completa."],
+    q: "Todo paciente com DRC precisa de dieta renal?",
+    a: ["Nem todos precisam imediatamente. O momento ideal deve ser definido pelo médico veterinário e deve ocorrer quando o pet ainda tem bom apetite para aceitar a mudança alimentar.", "A transição deve ser gradual, misturando progressivamente o alimento renal com o habitual até a substituição completa."],
   },
   {
     id: "faq-4",
-    q: "Gatos e cães apresentam os mesmos sinais?",
-    a: ["Os sinais são semelhantes, mas há diferenças práticas. Cães urinam fora e bebem água visível — fica mais fácil notar as mudanças. Gatos usam caixinha (observar o número de grumos) e bebem de tigelas grandes, tornando difícil perceber o aumento.", "Gatos também vomitam com menos frequência que cães com DRC avançada."],
+    q: "Qual a importância do exame de urina?",
+    a: ["O exame de urina é um dos principais exames para acompanhar a saúde dos rins. Ele pode identificar alterações na concentração da urina, perda de proteína, presença de infecção e outros sinais que ajudam o veterinário a avaliar a função renal."],
   },
   {
     id: "faq-5",
-    q: "O que é o SDMA e por que é importante?",
-    a: ["O SDMA (dimetilarginina simétrica) é um marcador sanguíneo que detecta DRC quando os rins perderam apenas ~40% da função — muito antes de BUN e creatinina saírem do normal.", "Isso permite intervenção mais precoce e potencialmente melhor prognóstico. Pergunte ao seu veterinário sobre incluí-lo nos exames de rotina do seu pet."],
+    q: "Quando aferir a pressão arterial?",
+    a: ["A hipertensão arterial é comum em pets com Doença Renal Crônica (DRC) e, na maioria das vezes, não causa sinais perceptíveis. Mesmo sem sintomas, ela pode provocar lesões em órgãos importantes, como rins, olhos, cérebro e coração.", "Por isso, medir a pressão arterial regularmente é fundamental. O diagnóstico precoce permite iniciar o tratamento quando necessário, ajudando a proteger os órgãos e reduzir o risco de complicações."],
   },
   {
     id: "faq-6",
-    q: "Com que frequência devo levar meu pet ao veterinário?",
-    a: ["Para pets mais velhos, visitas anuais com exames de sangue são recomendadas para detectar DRC precocemente — mesmo quando BUN e creatinina ainda estão dentro do normal.", "Para pets já diagnosticados, a frequência depende do estágio e orientação do veterinário."],
+    q: "Com que frequência devo levar meu pet com DRC ao veterinário?",
+    a: ["A frequência das consultas varia conforme o estágio da DRC, a estabilidade do paciente e a resposta ao tratamento.", "O acompanhamento regular é essencial para monitorar a evolução da doença, ajustar a terapia, quando necessário, e identificar precocemente possíveis complicações."],
   },
 ];
 
