@@ -338,7 +338,7 @@ export default function Home() {
                 </div>
                 <div className="px-5 py-5 text-center">
                   <p className="font-semibold text-slate-700 text-lg leading-snug">
-                    Com manejo adequado, alguns cães e gatos com DRC vivem vários anos com boa qualidade de vida.
+                    Com manejo adequado, alguns cães e gatos com DRC podem viver vários anos com boa qualidade de vida.
                   </p>
                 </div>
               </div>
