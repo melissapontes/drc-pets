@@ -349,7 +349,7 @@ export default function Home() {
                   <SectionTitle>Cuidados essenciais em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados essenciais em casa">
                     <TreatItem title="Água sempre disponível" desc="Nunca restrinja o acesso à água. O pet com DRC precisa beber água livremente para compensar as perdas pela urina. Restringir pode causar desidratação, agravando o quadro." color="#028ff9" textWhite imgIcon="/gotaBranca.png" />
-                    <TreatItem title="Dieta especial" desc="Alimentos terapêuticos com restrições de fósforo e sódio, além de quantidade moderada de proteína de alta qualidade. Transição gradual ao longo de semanas." color="#eb733a" textWhite imgIcon="/comidaBranca.png" imgSize="w-20 h-20" />
+                    <TreatItem title="Dieta especial" desc="Alimentos terapêuticos com restrições de fósforo e sódio, além de quantidade moderada de proteína de alta qualidade." color="#eb733a" textWhite imgIcon="/comidaBranca.png" imgSize="w-20 h-20" />
                   </ul>
 
                   {/* Card quadrado destacado — estudo dieta renal */}
@@ -364,21 +364,36 @@ export default function Home() {
 
                   <SectionTitle>Cuidados avançados em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados avançados em casa">
-                    <TreatItem title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar soro sob a pele do pet em casa quando ele não está se hidratando o suficiente." color="#03ab94" textWhite />
-                    <TreatItem title="Sonda de alimentação (gatos)" desc="Em gatos com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos em casa." color="#2e1360" textWhite />
+                    <TreatItem title="Fluidoterapia subcutânea" desc="O responsável pode ser treinado para aplicar fluido sob a pele do pet em casa, quando ele não está se hidratando o suficiente. O tipo, a quantidade e a frequência da fluidoterapia devem ser determinadas pelo veterinário." color="#03ab94" textWhite />
+                    <TreatItem title="Sonda de alimentação (gatos)" desc="Em gatos com DRC avançada, uma sonda gástrica pode ser colocada para facilitar a administração de alimento, água e medicamentos, em casa." color="#2e1360" textWhite />
                   </ul>
                 </div>
 
                 <div>
-                  <SectionTitle>Tratamentos prescritos pelo veterinário</SectionTitle>
+                  <SectionTitle>Tratamentos que podem ser prescritos pelo veterinário</SectionTitle>
                   <ul className="space-y-3" aria-label="Tratamentos médicos para DRC">
+                    <TreatItem title="Controle de vômito" desc="Antieméticos ajudam a controlar os episódios de vômito e melhorar a qualidade de vida do pet." color="#0c88a9" textWhite />
+                    <TreatItem title="Estímulo ao apetite" desc="Os orexígenos podem ajudar o pet a voltar a se interessar pela alimentação." color="#eb7239" textWhite />
                     <TreatItem title="Quelantes de fósforo" desc="Medicamentos que se ligam ao fósforo no intestino e impedem sua absorção. Devem ser dados na hora da refeição e com orientação veterinária." color="#87c522" textWhite />
-                    <TreatItem title="Controle da pressão arterial" desc="Hipertensão é complicação tratável. Medicamentos como amlodipina podem ser usados. A medição requer técnica cuidadosa para evitar resultado falso." color="#c02c8c" textWhite />
-                    <TreatItem title="Inibidores do sistema renina-angiotensina" desc="Benazepril (IECA) ou telmisartana (BRA) para reduzir a perda de proteína na urina e proteger os rins." color="#74629f" textWhite />
-                    <TreatItem title="Controle de vômito e apetite" desc="Antieméticos (maropitant, ondansetron) para vômito. Mirtazapina para estimular o apetite em gatos (também reduz vômito)." color="#0c88a9" textWhite />
+                    <TreatItem title="Controle da pressão arterial" desc="Hipertensão é uma complicação tratável que, se adequadamente controlada, pode melhorar o bem-estar do animal e possivelmente retardar a progressão da doença renal. A medição requer técnica cuidadosa para evitar resultados falsos." color="#c02c8c" textWhite />
+                    <TreatItem title="Controle da proteinúria" desc="Alguns medicamentos ajudam a reduzir a perda excessiva de proteína pela urina, contribuindo para a proteção dos rins." color="#74629f" textWhite />
                     <TreatItem title="Eritropoetina" desc="Usada em casos avançados para tratar anemia. Requer acompanhamento especializado." color="#97150b" textWhite />
-                    <TreatItem title="Calcitriol" desc="Usado em casos avançados para corrigir o desequilíbrio de cálcio. Requer acompanhamento especializado." color="#8c7ca1" textWhite />
                   </ul>
+                </div>
+              </div>
+
+              {/* Dica — saúde bucal e rins */}
+              <div className="rounded-2xl overflow-hidden shadow-sm flex" style={{ background: "#EAF7F5" }}>
+                <div className="w-2 flex-shrink-0" style={{ background: "#03ab94" }} />
+                <div className="px-5 py-5">
+                  <p className="font-bold text-xl mb-1 flex items-center gap-2" style={{ color: "#04695a" }}>
+                    <span aria-hidden="true">💡</span> Dica: cuide dos dentes do seu pet
+                  </p>
+                  <p className="text-lg leading-relaxed" style={{ color: "#04695a" }}>
+                    A escovação regular dos dentes ajuda a controlar a doença periodontal. Quando as gengivas estão
+                    inflamadas, bactérias da boca caem na corrente sanguínea e sobrecarregam os rins. Manter a higiene
+                    bucal em dia reduz essa carga e contribui para a saúde renal do seu pet.
+                  </p>
                 </div>
               </div>
             </div>
