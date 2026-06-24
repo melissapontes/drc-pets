@@ -393,8 +393,8 @@ export default function Home() {
                   </p>
                   <p className="text-lg leading-relaxed" style={{ color: "#04695a" }}>
                     A escovação regular dos dentes ajuda a controlar a doença periodontal. Quando as gengivas estão
-                    inflamadas, bactérias da boca caem na corrente sanguínea e sobrecarregam os rins. Manter a higiene
-                    bucal em dia reduz essa carga e contribui para a saúde renal do seu pet.
+                    infeccionadas, podem acumular bactérias, que ao cair na corrente sanguínea, podem sobrecarregar os rins. Manter a higiene
+                    bucal em dia ajuda a reduzir essa carga e pode contribuir para a saúde renal do seu pet.
                   </p>
                 </div>
               </div>
