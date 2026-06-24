@@ -281,11 +281,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="rounded-xl p-4 flex gap-3 items-start text-lg" style={{ background: "#FFF1F1" }}>
-                <img src="/alerta.png" alt="" className="w-10 h-10 object-contain flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-bold text-lg mb-1" style={{ color: "#880304" }}>Quando procurar ajuda veterinária</p>
-                  <p style={{ color: "#880304" }}>Se o pet parar de comer, apresentar vômitos frequentes ou sinais de desidratação.</p>
+              <div className="rounded-2xl overflow-hidden shadow-sm flex flex-col bg-white">
+                <div className="h-44 overflow-hidden" style={{ background: "#FFF1F1" }}>
+                  <img src="/bgajuda.png" alt="" aria-hidden="true" className="w-full h-full object-contain scale-[1.6] origin-center" />
+                </div>
+                <div className="px-5 py-5 text-center bg-white">
+                  <p className="font-bold text-xl mb-1" style={{ color: "#880304" }}>Sinais de alerta</p>
+                  <p className="text-lg" style={{ color: "#880304" }}>Se o pet parar de comer, apresentar vômitos frequentes ou sinais de desidratação, entre em contato com o médico veterinário o quanto antes.</p>
                 </div>
               </div>
 
