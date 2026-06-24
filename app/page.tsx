@@ -340,8 +340,18 @@ export default function Home() {
                   <SectionTitle>Cuidados essenciais em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados essenciais em casa">
                     <TreatItem title="Água sempre disponível" desc="Nunca restrinja o acesso à água. O pet com DRC precisa beber água livremente para compensar as perdas pela urina. Restringir pode causar desidratação, agravando o quadro." color="#028ff9" textWhite imgIcon="/gotaBranca.png" />
-                    <TreatItem title="Dieta renal" desc="Alimentos terapêuticos com baixo fósforo, proteína moderada e baixo sódio. Transição gradual ao longo de semanas. Estudos mostram que gatos com dieta renal vivem até o dobro do tempo." color="#eb733a" textWhite imgIcon="/comidaBranca.png" imgSize="w-20 h-20" />
+                    <TreatItem title="Dieta especial" desc="Alimentos terapêuticos com restrições de fósforo e sódio, além de quantidade moderada de proteína de alta qualidade. Transição gradual ao longo de semanas." color="#eb733a" textWhite imgIcon="/comidaBranca.png" imgSize="w-20 h-20" />
                   </ul>
+
+                  {/* Card quadrado destacado — estudo dieta renal */}
+                  <div className="mt-3 rounded-2xl overflow-hidden shadow-sm bg-white aspect-square flex flex-col">
+                    <div className="flex-1 min-h-0 bg-[#FDEBD3]">
+                      <img src="/gato.svg" alt="Gato" className="w-full h-full object-cover" />
+                    </div>
+                    <p className="px-4 py-4 text-center font-bold text-slate-800 text-lg leading-snug">
+                      Alguns estudos mostram que gatos com dieta renal vivem até o dobro do tempo.
+                    </p>
+                  </div>
 
                   <SectionTitle>Cuidados avançados em casa</SectionTitle>
                   <ul className="space-y-3" aria-label="Cuidados avançados em casa">
