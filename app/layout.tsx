@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   title: "DRC em Pets — Guia para Responsáveis",
   description: "Guia educativo sobre doença renal crônica em cães e gatos, baseado nas diretrizes da IRIS.",
   icons: {
-    icon: "/favicon.png",
-    apple: "/rim.png",
+    icon: "/iconeApp.png",
+    apple: "/iconeApp.png",
   },
   manifest: "/manifest.json",
 };
