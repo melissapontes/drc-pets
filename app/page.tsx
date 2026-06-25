@@ -55,26 +55,23 @@ function PageTitle({ children }: { children: React.ReactNode }) {
   );
 }
 
+const LANGS: Lang[] = ["pt", "es", "en"];
+
 function LangToggle({ lang, onChange, className = "" }: { lang: Lang; onChange: (l: Lang) => void; className?: string }) {
   const base = "px-2.5 py-1 text-xs font-bold rounded-md transition-colors";
   return (
-    <div className={`inline-flex items-center gap-1 rounded-lg bg-white/20 p-0.5 ${className}`} role="group" aria-label="Idioma / Idioma">
-      <button
-        type="button"
-        onClick={() => onChange("pt")}
-        aria-pressed={lang === "pt"}
-        className={`${base} ${lang === "pt" ? "bg-white text-[#550084]" : "text-white hover:bg-white/20"}`}
-      >
-        PT
-      </button>
-      <button
-        type="button"
-        onClick={() => onChange("es")}
-        aria-pressed={lang === "es"}
-        className={`${base} ${lang === "es" ? "bg-white text-[#550084]" : "text-white hover:bg-white/20"}`}
-      >
-        ES
-      </button>
+    <div className={`inline-flex items-center gap-1 rounded-lg bg-white/20 p-0.5 ${className}`} role="group" aria-label="Idioma / Language">
+      {LANGS.map((l) => (
+        <button
+          key={l}
+          type="button"
+          onClick={() => onChange(l)}
+          aria-pressed={lang === l}
+          className={`${base} ${lang === l ? "bg-white text-[#550084]" : "text-white hover:bg-white/20"}`}
+        >
+          {l.toUpperCase()}
+        </button>
+      ))}
     </div>
   );
 }
@@ -92,7 +89,7 @@ export default function Home() {
   const changeLang = (l: Lang) => {
     setLang(l);
     localStorage.setItem("lang", l);
-    document.documentElement.lang = l === "es" ? "es" : "pt-BR";
+    document.documentElement.lang = l === "es" ? "es" : l === "en" ? "en" : "pt-BR";
   };
 
   const t = translations[lang];
@@ -123,8 +120,9 @@ export default function Home() {
                 <span className="font-extrabold text-slate-800 text-sm leading-tight">{t.brand.name}</span>
               </div>
               <div className="inline-flex items-center gap-1 rounded-lg bg-slate-100 p-0.5">
-                <button type="button" onClick={() => changeLang("pt")} aria-pressed={lang === "pt"} className={`px-2 py-0.5 text-xs font-bold rounded-md transition-colors ${lang === "pt" ? "bg-[#550084] text-white" : "text-slate-500 hover:bg-slate-200"}`}>PT</button>
-                <button type="button" onClick={() => changeLang("es")} aria-pressed={lang === "es"} className={`px-2 py-0.5 text-xs font-bold rounded-md transition-colors ${lang === "es" ? "bg-[#550084] text-white" : "text-slate-500 hover:bg-slate-200"}`}>ES</button>
+                {LANGS.map((l) => (
+                  <button key={l} type="button" onClick={() => changeLang(l)} aria-pressed={lang === l} className={`px-2 py-0.5 text-xs font-bold rounded-md transition-colors ${lang === l ? "bg-[#550084] text-white" : "text-slate-500 hover:bg-slate-200"}`}>{l.toUpperCase()}</button>
+                ))}
               </div>
             </div>
             <p className="text-xs text-slate-400 pl-10">{t.brand.tagline}</p>
