@@ -7,6 +7,11 @@ const strongCls = 'class="text-[#550084] font-extrabold text-lg"';
 export const translations = {
   pt: {
     langName: "Português",
+    meta: {
+      title: "DRC em Pets — Guia para Responsáveis",
+      description: "Guia educativo sobre doença renal crônica em cães e gatos.",
+      locale: "pt_BR",
+    },
     header: {
       title1: "Doença renal crônica em",
       title2: "cães e gatos",
@@ -138,6 +143,11 @@ export const translations = {
 
   es: {
     langName: "Español",
+    meta: {
+      title: "ERC en Mascotas — Guía para Responsables",
+      description: "Guía educativa sobre la enfermedad renal crónica en perros y gatos.",
+      locale: "es_ES",
+    },
     header: {
       title1: "Enfermedad renal crónica en",
       title2: "perros y gatos",
@@ -269,6 +279,11 @@ export const translations = {
 
   en: {
     langName: "English",
+    meta: {
+      title: "CKD in Pets — Guide for Owners",
+      description: "Educational guide about chronic kidney disease in dogs and cats.",
+      locale: "en_US",
+    },
     header: {
       title1: "Chronic kidney disease in",
       title2: "dogs and cats",

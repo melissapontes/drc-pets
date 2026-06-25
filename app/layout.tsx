@@ -10,11 +10,15 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://drc-pets.vercel.app"),
   title: "DRC em Pets — Guia para Responsáveis",
   description: "Guia educativo sobre doença renal crônica em cães e gatos, baseado nas diretrizes da IRIS.",
   icons: {
-    icon: "/iconeApp.png",
-    apple: "/iconeApp.png",
+    icon: [
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/icon-512.png",
   },
   manifest: "/manifest.json",
 };
