@@ -89,7 +89,7 @@ const stages = [
 const faqs = [
   {
     id: "faq-1",
-    q: "Quanto tempo meu pet vai viver com DRC?",
+    q: "Quanto tempo vive um pet com DRC?",
     a: ["Não é possível prever com certeza, pois a velocidade de progressão da doença varia entre os animais. O médico veterinário utiliza exames, sinais clínicos e a resposta ao tratamento para acompanhar a doença ao longo do tempo e orientar os cuidados mais adequados.", "Com acompanhamento veterinário contínuo e os cuidados do responsável, muitos pets com DRC podem viver por vários anos com qualidade de vida."],
   },
   {
